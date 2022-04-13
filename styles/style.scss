@@ -3,4 +3,16 @@ header{
     color: white;
 }
 @import "./utils/_variables";
+@import "./utils/_functions";
+@import "./utils/_extensions";
+@import "./utils/_mixins";
 @import "./layout/_form";
+@import "./layout/_container";
+@import "./layout/header";
+@import "./layout/_nav";
+@import "./components/_buttons";
+@import "./base/_base";
+@import "./base/_typography";
+@import "./pages/_about";
+@import "./pages/_project";
+@import "./pages/_work";
