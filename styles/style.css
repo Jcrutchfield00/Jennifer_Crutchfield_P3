@@ -1,7 +1,8 @@
-header {
-  background-color: darkblue;
-  color: white;
+.explore_button {
+  border: 2px solid #9356dc;
+  padding: 10px 10px 10px 10px;
+  border-radius: 50px;
+  background-color: #9356dc;
+  color: #fff;
 }
-
-
 /*# sourceMappingURL=style.css.map */
