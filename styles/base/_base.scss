@@ -16,7 +16,8 @@ html {
     // overflow-x: hidden;
   }
 
-  
+  @media all and (min-width: 600px) {
+
   header{
     display: flex;
     flex-direction: column;
@@ -38,11 +39,14 @@ html {
     border: 2px solid transparent;
     background-color: $color-gray;
     padding: 10px 10px;
-    padding-left: 60px;
+    padding-left: 60px; 
     border-radius: 10px;
     display: flex;
     // justify-content: center;
     margin-top: 16px;
+  }
+  .images{
+    width: 340px;
   }
   .footer {
     display: flex;
@@ -52,5 +56,10 @@ html {
       &_list{
         list-style: none;
       }
+      &_header{
+        font-family: 'Shrikhand', cursive;
+        font-size: 22px;
+      }
   }
+}
   
