@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1330px;
+    width: 100%;
+    margin: 0 auto;
+    // overflow-x: hidden;
+  }
