@@ -44,3 +44,13 @@ html {
     // justify-content: center;
     margin-top: 16px;
   }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-black;
+    color: $color-white;  
+      &_list{
+        list-style: none;
+      }
+  }
+  
