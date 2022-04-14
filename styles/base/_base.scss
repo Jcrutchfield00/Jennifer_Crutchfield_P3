@@ -23,3 +23,24 @@ html {
     justify-content: center;
     text-align: center;
   }
+
+  nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav{
+    list-style: none;
+  }
+  .nav_choose, .nav_create, .nav_go{
+    width: 300px;
+    border: 2px solid transparent;
+    background-color: $color-gray;
+    padding: 10px 10px;
+    padding-left: 60px;
+    border-radius: 10px;
+    display: flex;
+    // justify-content: center;
+    margin-top: 16px;
+  }

@@ -47,4 +47,34 @@ header {
           justify-content: center;
   text-align: center;
 }
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav_choose, .nav_create, .nav_go {
+  width: 300px;
+  border: 2px solid transparent;
+  background-color: #f2f2f2;
+  padding: 10px 10px;
+  padding-left: 60px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+}
 /*# sourceMappingURL=style.css.map */
