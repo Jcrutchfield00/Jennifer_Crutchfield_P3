@@ -1,8 +1,10 @@
 .explore_button {
-  border: 2px solid #9356dc;
-  padding: 10px 10px 10px 10px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  border: transparent;
+  padding: 15px 15px 15px 15px;
   border-radius: 50px;
-  background-color: #9356dc;
+  background: linear-gradient(175deg, #ff79da, #9356dc);
   color: #fff;
   width: 220px;
   display: -webkit-box;
@@ -30,89 +32,53 @@ html {
 body {
   display: block;
   font-family: 'Roboto', sans-serif;
-  max-width: 1330px;
-  width: 100%;
   margin: 0 auto;
 }
 
-@media all and (min-width: 600px) {
-  header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
-  nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .nav {
-    list-style: none;
-  }
-  .nav_choose, .nav_create, .nav_go {
-    width: 300px;
-    border: 2px solid transparent;
-    background-color: #f2f2f2;
-    padding: 10px 10px;
-    padding-left: 60px;
-    border-radius: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 16px;
-  }
-  .restaurants {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 350px;
-    height: 1180px;
-  }
-  .restaurants_cards {
-    max-width: 350px;
-    max-height: 249px;
-  }
-  .restaurants_images {
-    max-width: 340px;
-  }
-  .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: black;
-    color: #fff;
-  }
-  .footer_list {
-    list-style: none;
-  }
-  .footer_header {
-    font-family: 'Shrikhand', cursive;
-    font-size: 22px;
-  }
+header {
+  width: 375px;
+  height: 305px;
+  background-color: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+img {
+  max-width: 50%;
+}
+
+.logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 375px;
+  height: 63px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.text {
+  margin-left: 20px;
+}
+
+.gps {
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.header_bold {
+  font-size: 30px;
+}
+
+.header_p {
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */
