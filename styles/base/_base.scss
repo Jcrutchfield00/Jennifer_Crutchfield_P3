@@ -1,56 +1,87 @@
 html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
 
-  body {
-    display: block;
-    font-family: 'Roboto', sans-serif;
-    margin: 0 auto;
-   
-  }
-  header{
-    width: 375px;
-    height: 305px;
-    // border: 2px solid $color-primary;
-    background-color: #f9f9f9;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-  img{
-    max-width: 50%;
-  }
-  .logo{
-    object-fit: contain;
-    width: 375px;
-    height: 63px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    text-align: center;
-  }
-.text{
+body {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+
+}
+
+header {
+  width: 375px;
+  height: 335px;
+  // border: 2px solid $color-primary;
+  background-color: $color-lightgray;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+img {
+  max-width: 50%;
+}
+
+.logo {
+  object-fit: contain;
+  width: 375px;
+  height: 63px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.text {
   margin-left: 20px;
 }
-  .gps{
-    line-height: 50px;
-    font-size: 20px;
-  }
-  .header_bold{
-    font-size: 30px;
 
-  }
-  .header_p {
-    font-size: 20px;
-  
-  }
+.gps {
+  line-height: 50px;
+  font-size: 20px;
+  border: 1px solid transparent;
+}
 
-  
+.header_bold {
+  font-size: 30px;
+
+}
+
+.header_p {
+  font-size: 20px;
+
+}
+
+nav {
+  width: 375px;
+  height: 350px;
+  border: 2px solid $color-secondary;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  list-style: none;
+  &_header{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: 800;
+  }
+}
+.how_to_button{
+  font-weight: 600;
+  width: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  border: transparent;
+  margin-top: 16px;
+}
