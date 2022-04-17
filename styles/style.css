@@ -39,6 +39,9 @@ body {
 header {
   width: 375px;
   height: 335px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #9356dc;
   background-color: #f9f9f9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,10 +69,6 @@ img {
   text-align: center;
 }
 
-.text {
-  margin-left: 20px;
-}
-
 .gps {
   line-height: 50px;
   font-size: 20px;
@@ -87,6 +86,8 @@ img {
 nav {
   width: 375px;
   height: 350px;
+  margin-left: auto;
+  margin-right: auto;
   border: 2px solid #ff79da;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,6 +100,7 @@ nav {
 
 .nav {
   list-style: none;
+  counter-reset: circle-counter;
 }
 
 .nav_header {
@@ -118,6 +120,40 @@ nav {
   padding: 20px;
   border-radius: 20px;
   border: transparent;
+  background-color: #f9f9f9;
   margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.how_to_button:hover {
+  background-color: #e4d5f6;
+}
+
+.fa-solid {
+  margin-right: 20px;
+  margin-left: 30px;
+}
+
+.fa-solid::before {
+  color: #c6c6c6;
+}
+
+.nav_chose, .nav_create, .nav_go {
+  counter-increment: circle-counter;
+}
+
+.nav_chose::before, .nav_create::before, .nav_go::before {
+  content: counter(circle-counter);
+  border: 1px solid #9356dc;
+  background-color: #9356dc;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 10px;
+  margin-left: -35px;
 }
 /*# sourceMappingURL=style.css.map */
