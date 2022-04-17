@@ -69,6 +69,10 @@ img {
   text-align: center;
 }
 
+.text {
+  margin-left: 20px;
+}
+
 .gps {
   line-height: 50px;
   font-size: 20px;
@@ -186,7 +190,7 @@ nav {
   margin-left: 0;
 }
 
-a {
+.white {
   text-decoration: none;
   color: #fff;
 }

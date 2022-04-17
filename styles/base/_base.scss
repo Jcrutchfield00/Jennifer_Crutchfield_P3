@@ -42,9 +42,9 @@ img {
   text-align: center;
 }
 
-// .text {
-//   margin-left: 20px;
-// }
+.text {
+   margin-left: 20px;
+}
 
 .gps {
   line-height: 50px;
@@ -139,7 +139,8 @@ counter-reset: circle-counter;
 .fa-utensils, .fa-handshake-angle{
   margin-left: 0;
 }
-a{
+
+.white{
 text-decoration: none;
 color: $color-white;
 }
