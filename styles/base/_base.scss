@@ -12,7 +12,7 @@ body {
   display: block;
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
-
+  height: 2275px;
 }
 
 header {
@@ -144,3 +144,17 @@ counter-reset: circle-counter;
 text-decoration: none;
 color: $color-white;
 }
+.restaurants{
+  border: 2px solid $color-tertiary;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 1580px;
+  &_cards{
+    max-width: 350px;
+     max-height: 249px;
+  }
+   &_images{
+     max-width: 340px;
+   }
+ }
