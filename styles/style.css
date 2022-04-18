@@ -34,7 +34,7 @@ body {
   display: block;
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
-  height: 2275px;
+  height: 2100px;
 }
 
 header {
@@ -58,13 +58,16 @@ header {
   -o-object-fit: contain;
      object-fit: contain;
   width: 375px;
-  height: 63px;
-  max-width: 50%;
+  height: 50px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   text-align: center;
+}
+
+.logo img {
+  max-width: 55%;
 }
 
 .text {
@@ -167,7 +170,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: black;
+  background-color: #3a3a3a;
   color: #fff;
 }
 
@@ -182,6 +185,7 @@ nav {
   margin-top: 20px;
   margin-bottom: 20px;
   padding-left: 40px;
+  color: #fff;
 }
 
 .fa-utensils, .fa-handshake-angle {
@@ -194,6 +198,7 @@ nav {
 }
 
 .restaurants {
+  background-color: #f9f9f9;
   border: 2px solid #99e2d0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,24 +208,31 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 375px;
-  height: 1065px;
+  height: 1185px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .restaurants_cards {
   border: 2px solid #9356dc;
-  max-width: 375px;
+  margin-left: 15px;
+  margin-right: 15px;
+  max-width: 350px;
   max-height: 249px;
+  border-radius: 15px;
+  margin-bottom: 20px;
 }
 
 .restaurants_cards_images {
+  border-radius: 15px 15px 0 0;
   width: 100%;
   height: 65%;
 }
 
 .restaurants_cards_content {
   border: 2px solid #ff79da;
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
   height: 35%;
   line-height: 15px;
   display: -webkit-box;

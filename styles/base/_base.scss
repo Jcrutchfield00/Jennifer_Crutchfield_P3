@@ -12,7 +12,7 @@ body {
   display: block;
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
-  height: 2275px;
+  height: 2100px;
 }
 
 header {
@@ -30,15 +30,16 @@ header {
 .logo {
   object-fit: contain;
   width: 375px;
-  height: 63px;
-  max-width: 50%;
+  height: 50px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   text-align: center;
 }
-
+.logo img{
+  max-width: 55%;
+}
 .text {
    margin-left: 20px;
 }
@@ -118,7 +119,7 @@ counter-reset: circle-counter;
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: $color-black;
+  background-color: darken($color: $color-gray, $amount: 55%);
   color: $color-white;  
     &_list{
       list-style: none;
@@ -130,6 +131,7 @@ counter-reset: circle-counter;
      margin-top: 20px;
      margin-bottom: 20px;
      padding-left: 40px;
+     color: $color-white;
     }
 }
 
@@ -142,19 +144,25 @@ text-decoration: none;
 color: $color-white;
 }
 .restaurants{
+  background-color: $color-lightgray;
   border: 2px solid $color-tertiary;
   display: flex;
   flex-direction: column;
   width: 375px;
-  height: 1065px;
+  height: 1185px;
   margin-left: auto;
   margin-right: auto;
 }
 .restaurants_cards{
     border: 2px solid $color-primary;
-    max-width: 375px;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 350px;
     max-height: 249px;
+    border-radius: 15px;
+    margin-bottom: 20px;
       &_images{
+     border-radius: 15px 15px 0 0;
        width: 100%;
         height: 65%;
       }
@@ -162,6 +170,8 @@ color: $color-white;
 
  .restaurants_cards_content{
    border: 2px solid $color-secondary;
+   background-color: $color-white;
+   border-radius: 0 0 15px 15px;
    height: 35%;
    line-height: 15px;
    display: flex;
@@ -182,7 +192,7 @@ color: $color-white;
    border: transparent;
  }
  .fa-heart::before{
-   color: $color-secondary;
+  color: $color-secondary;
    font-size: 22px;
  }
  .restaurants_cards_link{
