@@ -212,6 +212,30 @@ color: $color-white;
    color: darken($color-tertiary, 40%);
    padding: 1px 15px;
  }
-
-
- 
+ @media all and (min-width:750px) and (max-width:1630px) {
+.restaurants_header{
+display: flex;
+justify-content: flex-start;
+flex-basis: 100%;
+}
+  .restaurants{
+  background-color: $color-lightgray;
+  border: 2px solid aqua;
+  display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1300px;
+  height: 925px;
+ }
+ .restaurants_cards{
+  max-width: 500px;
+  max-height: 360px;
+ }
+ .content_left{
+   font-size: 20px;
+ }
+ .fa-heart::before{
+   font-size: 30px;
+ }
+ }
