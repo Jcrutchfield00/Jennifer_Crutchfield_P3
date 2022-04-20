@@ -13,6 +13,7 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   height: 2100px;
+  overflow-x: hidden;
 }
 
 header {
@@ -102,6 +103,9 @@ counter-reset: circle-counter;
    &::before{
      color: $color-gray;
    }
+ }
+ .fa-solid:hover::before{
+   color: $color-primary;
  }
 
 .nav_chose, .nav_create, .nav_go{
@@ -216,6 +220,14 @@ color: $color-white;
    padding: 1px 15px;
  }
  @media all and (min-width:764px) and (max-width:1143px) {
+  .logo {
+ width: 100%;
+    height: 100px;
+  
+  }
+  header {
+    width: 100%;
+  }
   nav {
     width: 100%;
     height: 300px;
@@ -234,6 +246,7 @@ color: $color-white;
  }
  .how_to_button{
    display: flex;
+   font-size: 14px;
    margin-right: 50px;
  }
   
@@ -242,7 +255,11 @@ color: $color-white;
 display: flex;
 justify-content: flex-start;
 flex-basis: 100%;
+font-size: 30px;
+margin-bottom: -110px;
+margin-left: 5%;
 }
+
   .restaurants{
   background-color: $color-lightgray;
   border: 2px solid aqua;
@@ -273,8 +290,15 @@ flex-basis: 100%;
  }
  }
  @media all and (min-width:1144px) and (max-width:1600px) {
+  header {
+    width: 100%;
+  }
+  .logo {
+    width: 100%;
+    height: 100px;
+  }
     nav {
-      width: 1500px;
+      width: 100%;
       height: 350px;
     }
    .nav{
@@ -301,6 +325,8 @@ flex-basis: 100%;
     display: flex;
     justify-content: flex-start;
     flex-basis: 100%;
+    font-size: 40px;
+    margin-left: 5%;
     }
   .restaurants{
     background-color: $color-lightgray;
@@ -309,13 +335,13 @@ flex-basis: 100%;
    flex-direction: row;
    flex-wrap: wrap;
     justify-content: space-around;
-    width: 1500px;
+    width: 100%;
     height: 1005px;
    }
    .restaurants_cards{
     display: flex;
     flex-wrap: wrap;
-    max-width: 550px;
+    max-width: 540px;
     max-height: 270px;
     object-fit: cover;
     &_images{
@@ -327,7 +353,7 @@ flex-basis: 100%;
     }
    }
    .restaurants_cards_images{
-     width: 546px;
+     width: 536px;
    }
 .content_left{
    font-size: 20px;
