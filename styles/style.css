@@ -120,6 +120,11 @@ nav {
   font-weight: 800;
 }
 
+.search_link {
+  text-decoration: none;
+  color: black;
+}
+
 .how_to_button {
   font-weight: 600;
   width: 300px;
@@ -267,18 +272,36 @@ nav {
   margin-right: 30px;
 }
 
-.heart {
+.heart_solid {
+  position: relative;
+  margin-right: -55px;
+  background-color: transparent;
+  border: transparent;
+  opacity: 0;
+}
+
+.heart_solid:hover {
+  opacity: 1;
+}
+
+.heart_empty {
+  position: relative;
   background-color: transparent;
   border: transparent;
 }
 
+.heart_empty:hover {
+  opacity: 0;
+}
+
 .fa-heart::before {
-  color: #ff79da;
+  color: black;
   font-size: 22px;
 }
 
 .restaurants_cards_link {
   text-decoration: none;
+  color: black;
 }
 
 .image_container {
