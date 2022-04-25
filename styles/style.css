@@ -221,6 +221,19 @@ nav {
   margin-right: auto;
 }
 
+.restaurants_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: -110px;
+  margin-left: 5%;
+}
+
 .restaurants_cards {
   border: 2px solid #9356dc;
   margin-left: 15px;
@@ -369,17 +382,7 @@ nav {
     margin-right: 50px;
   }
   .restaurants_header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
     font-size: 30px;
-    margin-bottom: -110px;
-    margin-left: 5%;
   }
   .restaurants {
     background-color: #f9f9f9;
@@ -518,6 +521,9 @@ nav {
   }
   .fa-heart::before {
     font-size: 30px;
+  }
+  .heart_solid {
+    left: 46px;
   }
 }
 /*# sourceMappingURL=style.css.map */

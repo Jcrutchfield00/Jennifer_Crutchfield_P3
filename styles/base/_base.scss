@@ -158,6 +158,13 @@ color: $color-white;
   margin-left: auto;
   margin-right: auto;
 }
+.restaurants_header{
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 100%;
+    margin-bottom: -110px;
+    margin-left: 5%;
+}
 .restaurants_cards{
     border: 2px solid $color-primary;
     margin-left: 15px;
@@ -283,12 +290,7 @@ color: $color-white;
   
 
 .restaurants_header{
-display: flex;
-justify-content: flex-start;
-flex-basis: 100%;
 font-size: 30px;
-margin-bottom: -110px;
-margin-left: 5%;
 }
 
   .restaurants{
@@ -319,6 +321,7 @@ margin-left: 5%;
  #img_fix{
    width: 346px;
  }
+ 
  }
  @media all and (min-width:1144px) and (max-width:1600px) {
   header {
@@ -392,4 +395,7 @@ margin-left: 5%;
  .fa-heart::before{
    font-size: 30px;
  }
+ .heart_solid{
+  left: 46px;
  }
+}
