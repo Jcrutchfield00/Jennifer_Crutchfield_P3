@@ -145,21 +145,13 @@ nav {
   background-color: #e4d5f6;
 }
 
-.fa-solid {
-  margin-right: 20px;
-  margin-left: 30px;
-}
-
-.fa-solid::before {
-  color: #c6c6c6;
-}
-
 .fa-solid:hover::before {
   color: #9356dc;
 }
 
-.target:hover > .fa-solid {
-  color: blue;
+.fa-lg {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .nav_chose, .nav_create, .nav_go {
@@ -172,7 +164,7 @@ nav {
   background-color: #9356dc;
   color: #fff;
   border-radius: 50%;
-  padding: 10px 10px;
+  padding: 5px 8px;
   margin-left: -35px;
 }
 
@@ -205,6 +197,7 @@ nav {
 
 .fa-utensils, .fa-handshake-angle {
   margin-left: 0;
+  margin-right: 20px;
 }
 
 .white {
@@ -277,30 +270,37 @@ nav {
 }
 
 .heart_empty {
-  position: relative;
   background-color: transparent;
   border: transparent;
+  opacity: 1;
+}
+
+.heart_empty:hover {
+  opacity: 0;
 }
 
 .heart_solid {
   position: relative;
-  left: 57px;
+  left: 38px;
   opacity: 0;
-}
-
-.heart_solid:hover {
-  opacity: 1;
   background-color: transparent;
   border: transparent;
 }
 
+.heart_solid:hover {
+  opacity: 1;
+}
+
+.fa-regular::before {
+  color: black;
+}
+
 .fa-heart::before {
-  color: #ff79da;
   font-size: 22px;
 }
 
-.heart_solid:hover {
-  background: linear-gradient(30deg, #8e67d3 30%, #79b7d6 70%);
+.fa-heart:hover::before {
+  background: linear-gradient(195deg, #9356dc 30%, #ff79da 70%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent !important;

@@ -100,19 +100,13 @@ counter-reset: circle-counter;
   }
 }
 // create a better gray with a mixin or function
- .fa-solid{
-   margin-right: 20px;
-   margin-left: 30px;
-   &::before{
-     color: $color-gray;
-   }
- }
  .fa-solid:hover::before{
    color: $color-primary;
  }
-//  added during mentor session
- .target:hover > .fa-solid {color: blue}
-//  end 
+.fa-lg{
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .nav_chose, .nav_create, .nav_go{
   counter-increment: circle-counter;
   &::before{
@@ -121,7 +115,7 @@ counter-reset: circle-counter;
   background-color: $color-primary;
   color: $color-white;
   border-radius: 50%;
-  padding: 10px 10px;
+  padding: 5px 8px;
   margin-left: -35px;
 }
 }
@@ -147,6 +141,7 @@ counter-reset: circle-counter;
 
 .fa-utensils, .fa-handshake-angle{
   margin-left: 0;
+  margin-right: 20px;
 }
 
 .white{
@@ -200,34 +195,43 @@ color: $color-white;
    margin-right: 30px;
  }
  .heart_empty{
-   position: relative;
+  
    background-color: transparent;
    border: transparent;
+   opacity: 1;
+   &:hover{
+     opacity: 0;
+   }
  }
+
 //  added during mentor session
  .heart_solid{
    position: relative;
-   left: 57px;
+   left: 38px;
    opacity: 0;
-   &:hover{
-     opacity: 1;
-     background-color: transparent;
-     border: transparent;
+   background-color: transparent;
+   border: transparent;
+     &:hover{
+       opacity: 1;
    }
  }
+
 //  end
+ .fa-regular::before{
+  color: black;
+ }
  .fa-heart::before{
-  color: $color-secondary;
    font-size: 22px;
  }
-//  added during mentor session
- .heart_solid:hover{
-  background: linear-gradient(30deg, #8e67d3 30%, #79b7d6 70%);
-background-clip: text;
--webkit-background-clip: text;
-color: transparent !important;
-opacity: 1;
- }
+ 
+//  added during mentor session works
+.fa-heart:hover::before{
+  background: linear-gradient(195deg, $color-primary 30%, $color-secondary 70%);
+ background-clip: text;
+ -webkit-background-clip: text;
+ color: transparent !important;
+ opacity: 1;
+  }
 //  end
  .restaurants_cards_link{
    text-decoration: none;
