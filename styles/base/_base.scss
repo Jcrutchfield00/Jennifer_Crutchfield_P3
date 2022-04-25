@@ -107,7 +107,9 @@ counter-reset: circle-counter;
  .fa-solid:hover::before{
    color: $color-primary;
  }
-
+//  added during mentor session
+ .target:hover > .fa-solid {color: blue}
+//  end 
 .nav_chose, .nav_create, .nav_go{
   counter-increment: circle-counter;
   &::before{
@@ -194,14 +196,36 @@ color: $color-white;
    margin-top: 30px;
    margin-right: 30px;
  }
- .heart{
+ .heart_empty{
+   position: relative;
    background-color: transparent;
    border: transparent;
  }
+//  added during mentor session
+ .heart_solid{
+   position: relative;
+   left: 57px;
+   opacity: 0;
+   &:hover{
+     opacity: 1;
+     background-color: transparent;
+     border: transparent;
+   }
+ }
+//  end
  .fa-heart::before{
   color: $color-secondary;
    font-size: 22px;
  }
+//  added during mentor session
+ .heart_solid:hover{
+  background: linear-gradient(30deg, #8e67d3 30%, #79b7d6 70%);
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent !important;
+opacity: 1;
+ }
+//  end
  .restaurants_cards_link{
    text-decoration: none;
  }

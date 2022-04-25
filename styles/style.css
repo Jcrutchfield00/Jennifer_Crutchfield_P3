@@ -153,6 +153,10 @@ nav {
   color: #9356dc;
 }
 
+.target:hover > .fa-solid {
+  color: blue;
+}
+
 .nav_chose, .nav_create, .nav_go {
   counter-increment: circle-counter;
 }
@@ -267,7 +271,20 @@ nav {
   margin-right: 30px;
 }
 
-.heart {
+.heart_empty {
+  position: relative;
+  background-color: transparent;
+  border: transparent;
+}
+
+.heart_solid {
+  position: relative;
+  left: 57px;
+  opacity: 0;
+}
+
+.heart_solid:hover {
+  opacity: 1;
   background-color: transparent;
   border: transparent;
 }
@@ -275,6 +292,14 @@ nav {
 .fa-heart::before {
   color: #ff79da;
   font-size: 22px;
+}
+
+.heart_solid:hover {
+  background: linear-gradient(30deg, #8e67d3 30%, #79b7d6 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+  opacity: 1;
 }
 
 .restaurants_cards_link {
