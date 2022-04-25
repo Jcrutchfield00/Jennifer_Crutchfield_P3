@@ -120,6 +120,11 @@ nav {
   font-weight: 800;
 }
 
+.search_link {
+  text-decoration: none;
+  color: black;
+}
+
 .how_to_button {
   font-weight: 600;
   width: 300px;
