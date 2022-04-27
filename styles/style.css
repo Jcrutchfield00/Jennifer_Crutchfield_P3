@@ -38,7 +38,7 @@ body {
   overflow-x: hidden;
 }
 
-header {
+.header {
   width: 375px;
   height: 335px;
   margin-left: auto;
@@ -154,11 +154,15 @@ nav {
   margin-right: 20px;
 }
 
-.nav_chose, .nav_create, .nav_go {
+.nav_chose,
+.nav_create,
+.nav_go {
   counter-increment: circle-counter;
 }
 
-.nav_chose::before, .nav_create::before, .nav_go::before {
+.nav_chose::before,
+.nav_create::before,
+.nav_go::before {
   content: counter(circle-counter);
   border: 1px solid #9356dc;
   background-color: #9356dc;
@@ -193,9 +197,11 @@ nav {
   margin-bottom: 20px;
   padding-left: 40px;
   color: #fff;
+  letter-spacing: .7px;
 }
 
-.fa-utensils, .fa-handshake-angle {
+.fa-utensils,
+.fa-handshake-angle {
   margin-left: 0;
   margin-right: 20px;
 }
@@ -340,12 +346,49 @@ nav {
   padding: 1px 15px;
 }
 
+.menu_images img {
+  width: 100%;
+}
+
+.menu {
+  border: 2px solid #c6c6c6;
+  width: 375px;
+  height: 1197px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu_sub {
+  background-color: #c6c6c6;
+  border: 2px solid #c6c6c6;
+  border-radius: 35px 35px 0 0;
+  position: relative;
+  bottom: 55px;
+}
+
+.menu_sub_header {
+  font-family: 'Shrikhand', cursive;
+  letter-spacing: .7px;
+}
+
+.menu_content_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  bottom: 35px;
+  right: 25px;
+}
+
 @media all and (min-width: 764px) and (max-width: 1143px) {
   .logo {
     width: 100%;
     height: 100px;
   }
-  header {
+  .header {
     width: 100%;
   }
   nav {
@@ -425,7 +468,7 @@ nav {
 }
 
 @media all and (min-width: 1144px) and (max-width: 1600px) {
-  header {
+  .header {
     width: 100%;
   }
   .logo {
