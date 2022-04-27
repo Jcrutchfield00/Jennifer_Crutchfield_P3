@@ -18,6 +18,28 @@
   margin-top: 10px;
 }
 
+.order_button {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  border: transparent;
+  padding: 15px 15px 15px 15px;
+  border-radius: 50px;
+  background: linear-gradient(175deg, #ff79da, #9356dc);
+  color: #fff;
+  width: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 10px;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -352,6 +374,7 @@ nav {
 
 .menu {
   border: 2px solid #c6c6c6;
+  background-color: #f9f9f9;
   width: 375px;
   height: 1197px;
   margin-left: auto;
@@ -359,7 +382,7 @@ nav {
 }
 
 .menu_sub {
-  background-color: #c6c6c6;
+  background-color: #f9f9f9;
   border: 2px solid #c6c6c6;
   border-radius: 35px 35px 0 0;
   position: relative;
@@ -369,6 +392,7 @@ nav {
 .menu_sub_header {
   font-family: 'Shrikhand', cursive;
   letter-spacing: .7px;
+  margin-left: 3%;
 }
 
 .menu_content_right {
@@ -381,6 +405,53 @@ nav {
   position: relative;
   bottom: 35px;
   right: 25px;
+}
+
+.menu_dish {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  padding: 0px 20px 0 10px;
+  border-radius: 10px;
+  border: transparent;
+  background-color: #fff;
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 0;
+}
+
+.menu_course {
+  margin-left: 3%;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.dish-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.dish-1-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 13px;
+}
+
+.price {
+  font-weight: 600;
 }
 
 @media all and (min-width: 764px) and (max-width: 1143px) {

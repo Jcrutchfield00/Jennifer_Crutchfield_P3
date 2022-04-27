@@ -293,13 +293,14 @@ nav {
 }
 .menu{
   border: 2px solid $color-gray;
+  background-color: $color-lightgray;
   width: 375px;
   height: 1197px;
   margin-left: auto;
   margin-right: auto;
 }
 .menu_sub{
-  background-color: $color-gray;
+  background-color: $color-lightgray;
   border: 2px solid $color-gray;
   border-radius: 35px 35px 0 0;
   position: relative;
@@ -308,6 +309,7 @@ nav {
 .menu_sub_header{
   font-family: 'Shrikhand', cursive;
   letter-spacing: .7px;
+  margin-left: 3%;
 }
 .menu_content_right{
   display: flex;
@@ -316,6 +318,37 @@ nav {
   bottom: 35px;
   right: 25px;
 }
+.menu_dish{
+  margin-left: auto;
+  margin-right: auto;
+    width: 95%;
+    padding: 0px 20px 0 10px;
+    border-radius: 10px;
+    border: transparent;
+    background-color: $color-white;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+}
+.menu_course{
+  margin-left: 3%;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.dish-1{
+  display: flex;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.dish-1-desc{
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.price{
+  font-weight: 600;
+ }
 
 @media all and (min-width:764px) and (max-width:1143px) {
   .logo {
