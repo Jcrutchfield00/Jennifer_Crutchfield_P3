@@ -246,7 +246,8 @@ nav {
   opacity: 0;
   background-color: transparent;
   border: transparent;
-
+  color: $color-secondary;
+transition: 1s;
   &:hover {
     opacity: 1;
   }
@@ -344,6 +345,19 @@ nav {
     flex-direction: column;
     line-height: 0;
 }
+// not understanding button fadein
+// .fa-circle-check{
+// color: $color-white;
+// background-color: $color-tertiary;
+// font-size: 20px;
+// position: relative;
+
+// }
+// .fade{
+//   display: flex;
+//  border: 2px solid $color-tertiary;
+//  padding: 20px;
+// }
 .menu_course{
   margin-left: 3%;
   text-transform: uppercase;

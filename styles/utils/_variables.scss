@@ -5,3 +5,8 @@ $color-white: #fff;
 $color-lightgray: #f9f9f9;
 $color-black: black;
 $color-gray: #c6c6c6;
+
+$color-linear: linear-gradient(175deg, $color-secondary, $color-primary);
+$color-light-primary: lighten($color-primary, 4);
+$color-light-secondary: lighten($color-secondary, 4);
+$color-light-linear: linear-gradient(175deg, $color-light-secondary, $color-light-primary);

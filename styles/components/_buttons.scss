@@ -6,11 +6,17 @@
     border-radius: 50px;
     background:linear-gradient(175deg, $color-secondary, $color-primary);
     color: $color-white;
+    box-shadow: 3px 3px 3px $color-gray;
     width: 220px;
     display: flex;
     justify-content: center;
     align-self: center;
     margin-top: 10px;
+    &:hover{
+        transform: scale(1.15);
+        box-shadow: 5px 5px 5px $color-gray;
+        background: $color-light-linear;
+    }
 }
 .order_button{
     margin-left: auto;
@@ -20,11 +26,17 @@
         border: transparent;
         padding: 15px 15px 15px 15px;
         border-radius: 50px;
-        background:linear-gradient(175deg, $color-secondary, $color-primary);
+        background: $color-linear;
         color: $color-white;
+        box-shadow: 3px 3px 3px $color-gray;
         width: 190px;
         display: flex;
         justify-content: center;
         align-self: center;
         margin-top: 10px;
+        &:hover{
+            transform: scale(1.25);
+            box-shadow: 10px 5px 5px $color-gray;
+          background: $color-light-linear;
+        }
 }
