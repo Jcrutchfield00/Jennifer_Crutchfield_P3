@@ -8,7 +8,7 @@
 
 @-webkit-keyframes fade {
   0% {
-    left: -600px;
+    left: -1600px;
   }
   100% {
     left: 0px;
@@ -17,7 +17,7 @@
 
 @keyframes fade {
   0% {
-    left: -600px;
+    left: -1600px;
   }
   100% {
     left: 0px;
@@ -34,7 +34,7 @@
 
 @-webkit-keyframes fade-1 {
   0% {
-    left: -600px;
+    left: -1600px;
   }
   100% {
     left: 0px;
@@ -43,7 +43,7 @@
 
 @keyframes fade-1 {
   0% {
-    left: -600px;
+    left: -1600px;
   }
   100% {
     left: 0px;
@@ -60,7 +60,7 @@
 
 @-webkit-keyframes fade-2 {
   0% {
-    left: -600px;
+    left: -1600px;
   }
   100% {
     left: 0px;
@@ -69,7 +69,7 @@
 
 @keyframes fade-2 {
   0% {
-    left: -600px;
+    left: -1600px;
   }
   100% {
     left: 0px;
@@ -128,6 +128,14 @@
   -ms-flex-item-align: center;
       align-self: center;
   margin-top: 10px;
+  opacity: 0;
+  position: relative;
+  -webkit-animation-name: order;
+          animation-name: order;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .order_button:hover {
@@ -136,6 +144,30 @@
   -webkit-box-shadow: 10px 5px 5px #c6c6c6;
           box-shadow: 10px 5px 5px #c6c6c6;
   background: linear-gradient(175deg, #ff8de0, #9e67e0);
+}
+
+@-webkit-keyframes order {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes order {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 html {
