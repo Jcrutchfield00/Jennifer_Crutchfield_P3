@@ -304,7 +304,13 @@ transition: 1s;
 }
  .menu_images img{
   width: 100%;
+  position: relative;
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
+
 .menu{
   border: 2px solid $color-gray;
   background-color: $color-lightgray;
@@ -324,6 +330,23 @@ transition: 1s;
   font-family: 'Shrikhand', cursive;
   letter-spacing: .7px;
   margin-left: 3%;
+  position: relative;
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+// for img and subheader
+@keyframes appear{
+  0%{
+    opacity: 0;
+  }
+  25%{
+      opacity: 0;
+  }
+  100%{
+  opacity: 1;
+  }
 }
 .menu_content_right{
   display: flex;
