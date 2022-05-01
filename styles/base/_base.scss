@@ -367,21 +367,59 @@ transition: 1s;
     display: flex;
     flex-direction: column;
     line-height: 0;
+    // position: relative;
+    &:hover .checkmark{
+      transition: transform;
+      transition: transform .5s;
+      transform-origin: right 50%;
+    transform: scaleX(1);
+    }
+    &:hover .price{
+position: relative;
+right: 40px;
+    }
+    &:hover .fa-circle-check{
+      // opacity: 1;
+      transition-duration: 1s;
+      transform: rotate(1turn);
+    }
 }
+// .menu_dish:hover::after{
+//   content: "\f058";
+//   font-family: FontAwesome;
+//   background-color: $color-tertiary;
+//   display: inline;
+//   position: relative;
+//   right: 0;
+//   top: -50px;
+//   left: 300px;
+//   bottom: 0;
+//   padding: 20px;
+// }
 
 // not understanding button fadein
-// .fa-circle-check{
-// color: $color-white;
-// background-color: $color-tertiary;
-// font-size: 20px;
-// position: relative;
+.fa-circle-check{
+ color: $color-white;
+ background-color: $color-tertiary;
+ font-size: 20px;
+ position: relative;
+//  opacity: 0;
+}
 
-// }
-// .fade{
-//   display: flex;
-//  border: 2px solid $color-tertiary;
-//  padding: 20px;
-// }
+.checkmark{
+  position: relative;
+  display: flex;
+    position: absolute;
+    left: 87%;
+    width: 50px;
+    height: 100%;
+    background-color: $color-tertiary;
+    border-radius: 0 10px 10px 0;
+    justify-content: center;
+    align-items: center;
+    transform: scaleX(0);
+   
+}
 .menu_course{
   margin-left: 3%;
   text-transform: uppercase;
@@ -399,6 +437,7 @@ transition: 1s;
 }
 .price{
   font-weight: 600;
+  position: relative;
  }
 
 @media all and (min-width:764px) and (max-width:1143px) {
