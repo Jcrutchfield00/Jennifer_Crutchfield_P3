@@ -754,6 +754,9 @@ nav {
   .restaurants_header {
     font-size: 30px;
   }
+  .heart_solid {
+    left: 50px;
+  }
   .restaurants {
     background-color: #f9f9f9;
     border: 2px solid aqua;
@@ -935,7 +938,7 @@ nav {
     font-size: 30px;
   }
   .heart_solid {
-    left: 46px;
+    left: 56px;
   }
   .back {
     width: 100%;
