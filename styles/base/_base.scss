@@ -16,6 +16,73 @@ body {
   overflow-x: hidden;
 }
 
+.loading_page{
+   display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  background: $color-light-linear;
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+}
+
+.loading_page img{
+  width: 25%;
+opacity: 0;
+animation-name: loading;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+}
+@keyframes loading{
+  0%{
+opacity: 0;
+  }
+  25%{
+opacity: .25;
+  }
+  50%{
+opacity: .50;
+  }
+  75%{
+opacity: .75;
+  }
+  100%{
+opacity: 1;
+  }
+}
+.loader {
+  position: absolute;
+  bottom: 5%;
+  border: 16px solid $color-light-linear;
+  border-top: 16px solid $color-tertiary; 
+  border-bottom: 16px solid $color-tertiary;
+  border-radius: 50%;
+  width: 860px;
+  height: 860px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+
+}
+// .loader-1 {
+//   position: relative;
+//   right: 5%;
+//   bottom: 5%;
+//   border: 16px solid $color-gray; /* Light grey */
+//   border-top: 16px solid $color-tertiary; /* Blue */
+//   border-radius: 50%;
+//   width: 120px;
+//   height: 120px;
+//   animation: spin-reverse 2s linear infinite;
+// }
+// @keyframes spin-reverse {
+//   0% { transform: rotate(0deg); }
+//   100% { transform: rotate(-360deg); }
+// }
 .header {
   width: 375px;
   height: 335px;
