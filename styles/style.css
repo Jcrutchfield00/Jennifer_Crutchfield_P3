@@ -205,56 +205,46 @@ body {
   background: linear-gradient(175deg, #ff8de0, #9e67e0);
   -webkit-animation-name: loading;
           animation-name: loading;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  opacity: 1;
 }
 
 .loading_page img {
-  width: 25%;
-  opacity: 0;
+  width: 43%;
+  opacity: 1;
   -webkit-animation-name: loading;
           animation-name: loading;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 @-webkit-keyframes loading {
   0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: .25;
-  }
-  50% {
-    opacity: .50;
-  }
-  75% {
-    opacity: .75;
+    opacity: 1;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
 @keyframes loading {
   0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: .25;
-  }
-  50% {
-    opacity: .50;
-  }
-  75% {
-    opacity: .75;
+    opacity: 1;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -275,10 +265,12 @@ body {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    opacity: 1;
   }
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+    visibility: hidden;
   }
 }
 
@@ -286,10 +278,41 @@ body {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    opacity: 1;
   }
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+    visibility: hidden;
+  }
+}
+
+#homepage {
+  -webkit-animation: homepage_fade 4s linear;
+          animation: homepage_fade 4s linear;
+}
+
+@-webkit-keyframes homepage_fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes homepage_fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

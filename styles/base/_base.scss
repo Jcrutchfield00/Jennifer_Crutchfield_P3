@@ -24,32 +24,37 @@ body {
   height: 100%;
   background: $color-light-linear;
   animation-name: loading;
-  animation-duration: 3s;
-  animation-fill-mode: backwards;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  opacity: 1;
 }
 
 .loading_page img{
-  width: 25%;
-opacity: 0;
+  width: 43%;
+opacity: 1;
 animation-name: loading;
-animation-duration: 3s;
-animation-fill-mode: forwards;
+animation-duration: 4s;
 }
 @keyframes loading{
   0%{
-opacity: 0;
-  }
-  25%{
-opacity: .25;
-  }
-  50%{
-opacity: .50;
-  }
-  75%{
-opacity: .75;
-  }
-  100%{
 opacity: 1;
+animation-duration: 4s;
+  }
+//   75%{
+// opacity: .75;
+//   }
+//   50%{
+// opacity: .50;
+//   }
+//   75%{
+//  opacity: .25;
+//  }
+  100%{
+    opacity: 0;
+    visibility: hidden;
   }
 }
 .loader {
@@ -64,10 +69,20 @@ opacity: 1;
   animation: spin 2s linear infinite;
 }
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% { transform: rotate(0deg); opacity: 1;}
+  // 25%{
+  //   opacity: .75;
+  // }
+  // 50%{
+  //   opacity: .50;
+  // }
+//   75%{
+//     opacity: .25;
+//  }
+  100% { transform: rotate(360deg); visibility: hidden;}
 
 }
+
 // .loader-1 {
 //   position: relative;
 //   right: 5%;
@@ -83,6 +98,20 @@ opacity: 1;
 //   0% { transform: rotate(0deg); }
 //   100% { transform: rotate(-360deg); }
 // }
+#homepage{
+  animation: homepage_fade 4s linear ;
+}
+@keyframes homepage_fade{
+  0%{
+    opacity: 0;
+  }
+  25%{
+      opacity: 0;
+  }
+  100%{
+  opacity: 1;
+  }
+}
 .header {
   width: 375px;
   height: 335px;
