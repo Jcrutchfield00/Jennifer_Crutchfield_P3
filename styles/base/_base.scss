@@ -60,7 +60,7 @@ animation-duration: 4s;
 .loader {
   position: absolute;
   bottom: 5%;
-  border: 16px solid $color-light-linear;
+  border: 16px transparent $color-light-primary;
   border-top: 16px solid $color-tertiary; 
   border-bottom: 16px solid $color-tertiary;
   border-radius: 50%;
