@@ -411,12 +411,6 @@ nav {
   border: transparent;
   background-color: #f9f9f9;
   margin-top: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .how_to_button:hover {
@@ -848,7 +842,6 @@ nav {
     display: inline-flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -865,9 +858,6 @@ nav {
     font-size: 30px;
   }
   .how_to_button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     font-size: 14px;
     margin-right: 50px;
   }
@@ -971,7 +961,6 @@ nav {
     display: inline-flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -988,9 +977,6 @@ nav {
     font-size: 40px;
   }
   .how_to_button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 400px;
     font-size: 20px;
     margin-right: 50px;

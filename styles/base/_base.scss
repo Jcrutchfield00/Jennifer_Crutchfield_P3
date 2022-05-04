@@ -194,8 +194,8 @@ nav {
   border: transparent;
   background-color: $color-lightgray;
   margin-top: 16px;
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
 
   &:hover {
     background-color: lighten($color-primary, 30%);
@@ -208,6 +208,7 @@ nav {
 }
 
 .fa-lg {
+  // font-size: 20px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -563,7 +564,7 @@ right: 40px;
   .nav {
     display: inline-flex;
     flex-wrap: wrap;
-    text-align: center;
+    // text-align: center;
     justify-content: center;
   }
 
@@ -575,7 +576,7 @@ right: 40px;
   }
 
   .how_to_button {
-    display: flex;
+    // display: flex;
     font-size: 14px;
     margin-right: 50px;
   }
@@ -686,7 +687,7 @@ right: 40px;
   .nav {
     display: inline-flex;
     flex-wrap: wrap;
-    text-align: center;
+    // text-align: center;
     justify-content: center;
   }
 
@@ -698,7 +699,7 @@ right: 40px;
   }
 
   .how_to_button {
-    display: flex;
+    // display: flex;
     width: 400px;
     font-size: 20px;
     margin-right: 50px;
