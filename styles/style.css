@@ -205,8 +205,8 @@ body {
   background: linear-gradient(175deg, #ff8de0, #9e67e0);
   -webkit-animation-name: loading;
           animation-name: loading;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   position: fixed;
@@ -220,15 +220,15 @@ body {
   opacity: 1;
   -webkit-animation-name: loading;
           animation-name: loading;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 @-webkit-keyframes loading {
   0% {
     opacity: 1;
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
   }
   100% {
     opacity: 0;
@@ -239,8 +239,8 @@ body {
 @keyframes loading {
   0% {
     opacity: 1;
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
   }
   100% {
     opacity: 0;
@@ -321,7 +321,6 @@ body {
   height: 335px;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid #9356dc;
   background-color: #f9f9f9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,7 +371,6 @@ nav {
   height: 350px;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid #ff79da;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,6 +378,9 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .nav {
@@ -415,9 +416,6 @@ nav {
 
 .how_to_button:hover {
   background-color: #e4d5f6;
-}
-
-.fa-solid:hover::before {
   color: #9356dc;
 }
 
@@ -487,10 +485,10 @@ nav {
 
 .restaurants {
   background-color: #f9f9f9;
-  border: 2px solid #99e2d0;
   width: 375px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 10px;
 }
 
 .restaurants_header {
@@ -514,7 +512,8 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 2px solid #9356dc;
+  -webkit-box-shadow: 5px 5px 5px #c6c6c6;
+          box-shadow: 5px 5px 5px #c6c6c6;
   margin-left: 15px;
   margin-right: 15px;
   max-width: 350px;
@@ -535,7 +534,8 @@ nav {
 }
 
 .restaurants_cards_content {
-  border: 2px solid #ff79da;
+  -webkit-box-shadow: 5px 5px 5px #c6c6c6;
+          box-shadow: 5px 5px 5px #c6c6c6;
   background-color: #fff;
   border-radius: 0 0 15px 15px;
   height: 35%;
@@ -604,6 +604,7 @@ nav {
 
 .restaurants_cards_link {
   text-decoration: none;
+  color: black;
 }
 
 .top-right {
@@ -869,7 +870,6 @@ nav {
   }
   .restaurants {
     background-color: #f9f9f9;
-    border: 2px solid aqua;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -995,7 +995,6 @@ nav {
   }
   .restaurants {
     background-color: #f9f9f9;
-    border: 2px solid aqua;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
