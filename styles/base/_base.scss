@@ -268,10 +268,10 @@ nav {
 .restaurants {
   background-color: $color-lightgray;
   border: 2px solid $color-tertiary;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   width: 375px;
-  height: 1185px;
+  // height: 1180px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -280,24 +280,29 @@ nav {
   display: flex;
   justify-content: flex-start;
   flex-basis: 100%;
-  margin-bottom: -110px;
+  // margin-bottom: -110px;
   margin-left: 5%;
 }
 
 .restaurants_cards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   border: 2px solid $color-primary;
   margin-left: 15px;
   margin-right: 15px;
   max-width: 350px;
-  max-height: 249px;
+  // max-height: 249px;
   border-radius: 15px;
   margin-bottom: 20px;
+  // margin-top: 80px;
 
   &_images {
     display: flex;
     border-radius: 15px 15px 0 0;
     width: 100%;
     height: 65%;
+    max-height: 249px;
     object-fit: cover;
   }
 }
@@ -372,9 +377,9 @@ transition: 1s;
   text-decoration: none;
 }
 
-.image_container {
-  position: relative;
-}
+// .image_container {
+//   position: relative;
+// }
 
 .top-right {
   position: absolute;
@@ -596,9 +601,9 @@ right: 40px;
 
   .restaurants_cards {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     width: 100%;
-    height: 100%;
+    // height: 100%;
     object-fit: contain;
 
     &_images {
@@ -611,9 +616,9 @@ right: 40px;
     }
   }
 
-  #img_fix {
-    width: 346px;
-  }
+  // .img_fix {
+  // height: fit-content;
+  // }
 
   // menu
   .back{
@@ -721,7 +726,7 @@ right: 40px;
 
   .restaurants_cards {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     max-width: 540px;
     max-height: 270px;
     object-fit: cover;
