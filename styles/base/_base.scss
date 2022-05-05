@@ -61,7 +61,7 @@ animation-duration: 3s;
   position: absolute;
   bottom: 30%;
   border: 16px transparent $color-light-primary;
-  border-top: 16px solid $color-tertiary; 
+  border-top: 16px solid $color-tertiary;
   border-bottom: 16px solid $color-tertiary;
   border-radius: 50%;
   width: 400px;
@@ -528,18 +528,26 @@ right: 15%;
     justify-content: center;
     align-items: center;
     transform: scaleX(0);
-   
+
 }
 .menu_course{
   margin-left: 3%;
   text-transform: uppercase;
   font-weight: 300;
+  padding-bottom: 12px;
+}
 
-  &:hover{
-   text-decoration: 2px underline $color-tertiary;
-   text-underline-offset: 12px;
-  }
-  
+.menu_course-line{
+ border-bottom: 2px solid $color-tertiary;
+  border-image: linear-gradient(to right, $color-tertiary 50%, transparent 50%) 100% 1;
+
+   &:hover{
+  //  text-decoration: 2px underline $color-tertiary;
+  //  text-underline-offset: 12px;
+  // border-bottom: 2px solid $color-tertiary;
+  border-image:  linear-gradient(to right, $color-tertiary 50%, $color-tertiary 50%) 100% 1;
+   }
+
 }
 .dish-1{
   display: flex;
@@ -645,8 +653,8 @@ right: 15%;
     font-size: 34px;
   }
   .menu{
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
   }
   .menu_heart{
     left: 46px;
@@ -664,7 +672,7 @@ right: 15%;
   .fa-circle-check{
     font-size: 40px;
    }
-  
+
   .dish-1-desc{
     font-size: 20px;
   }
@@ -682,7 +690,7 @@ right: 15%;
   .footer_header{
     font-size: 28px;
   }
-  
+
 }
 
 @media all and (min-width:1144px) {
@@ -783,8 +791,8 @@ right: 15%;
     width: 100%;
   }
   .menu{
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
   }
   .menu_sub_header{
     font-size: 48px;

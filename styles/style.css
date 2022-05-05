@@ -837,12 +837,20 @@ nav {
   margin-left: 3%;
   text-transform: uppercase;
   font-weight: 300;
+  padding-bottom: 12px;
 }
 
-.menu_course:hover {
-  -webkit-text-decoration: 2px underline #99e2d0;
-          text-decoration: 2px underline #99e2d0;
-  text-underline-offset: 12px;
+.menu_course-line {
+  border-bottom: 2px solid #99e2d0;
+  -o-border-image: linear-gradient(to right, #99e2d0 50%, transparent 50%) 100% 1;
+     border-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #99e2d0), color-stop(50%, transparent)) 100% 1;
+     border-image: linear-gradient(to right, #99e2d0 50%, transparent 50%) 100% 1;
+}
+
+.menu_course-line:hover {
+  -o-border-image: linear-gradient(to right, #99e2d0 50%, #99e2d0 50%) 100% 1;
+     border-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #99e2d0), color-stop(50%, #99e2d0)) 100% 1;
+     border-image: linear-gradient(to right, #99e2d0 50%, #99e2d0 50%) 100% 1;
 }
 
 .dish-1 {
