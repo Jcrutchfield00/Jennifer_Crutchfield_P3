@@ -534,7 +534,12 @@ right: 15%;
   margin-left: 3%;
   text-transform: uppercase;
   font-weight: 300;
-  text-decoration: 2px underline $color-tertiary;
+
+  &:hover{
+   text-decoration: 2px underline $color-tertiary;
+   text-underline-offset: 12px;
+  }
+  
 }
 .dish-1{
   display: flex;

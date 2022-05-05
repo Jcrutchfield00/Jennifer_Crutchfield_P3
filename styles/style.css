@@ -837,8 +837,12 @@ nav {
   margin-left: 3%;
   text-transform: uppercase;
   font-weight: 300;
+}
+
+.menu_course:hover {
   -webkit-text-decoration: 2px underline #99e2d0;
           text-decoration: 2px underline #99e2d0;
+  text-underline-offset: 12px;
 }
 
 .dish-1 {
