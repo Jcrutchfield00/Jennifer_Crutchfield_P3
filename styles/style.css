@@ -452,7 +452,6 @@ nav {
           flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  width: 375px;
   background-color: #3a3a3a;
   color: #fff;
 }
@@ -653,7 +652,6 @@ nav {
 
 .menu {
   border: 2px solid #c6c6c6;
-  background-color: #f9f9f9;
   width: 375px;
   height: 1197px;
   margin-left: auto;
@@ -662,7 +660,6 @@ nav {
 
 .menu_sub {
   background-color: #f9f9f9;
-  border: 2px solid #c6c6c6;
   border-radius: 35px 35px 0 0;
   position: relative;
   bottom: 55px;
@@ -729,6 +726,8 @@ nav {
   padding: 0px 20px 0 10px;
   border-radius: 10px;
   border: transparent;
+  -webkit-box-shadow: 3px 3px 3px #c6c6c6;
+          box-shadow: 3px 3px 3px #c6c6c6;
   background-color: #fff;
   margin-top: 16px;
   display: -webkit-box;
@@ -758,7 +757,7 @@ nav {
 
 .menu_dish:hover .price {
   position: relative;
-  right: 40px;
+  right: 15%;
 }
 
 .menu_dish:hover .fa-circle-check {
@@ -786,6 +785,8 @@ nav {
   height: 100%;
   background-color: #99e2d0;
   border-radius: 0 10px 10px 0;
+  -webkit-box-shadow: 3px 3px 3px #c6c6c6;
+          box-shadow: 3px 3px 3px #c6c6c6;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -800,6 +801,8 @@ nav {
   margin-left: 3%;
   text-transform: uppercase;
   font-weight: 300;
+  -webkit-text-decoration: 2px underline #99e2d0;
+          text-decoration: 2px underline #99e2d0;
 }
 
 .dish-1 {

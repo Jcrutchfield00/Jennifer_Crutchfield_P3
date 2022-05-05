@@ -233,7 +233,7 @@ nav {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  width: 375px;
+  // width: 375px;
   // width: 100%;
   background-color: darken($color: $color-gray, $amount: 55%);
   color: $color-white;
@@ -418,7 +418,7 @@ transition: 1s;
 
 .menu{
   border: 2px solid $color-gray;
-  background-color: $color-lightgray;
+  // background-color: $color-lightgray;
   width: 375px;
   height: 1197px;
   margin-left: auto;
@@ -426,7 +426,7 @@ transition: 1s;
 }
 .menu_sub{
   background-color: $color-lightgray;
-  border: 2px solid $color-gray;
+  // border: 2px solid $color-gray;
   border-radius: 35px 35px 0 0;
   position: relative;
   bottom: 55px;
@@ -470,6 +470,7 @@ transition: 1s;
     padding: 0px 20px 0 10px;
     border-radius: 10px;
     border: transparent;
+    box-shadow: 3px 3px 3px $color-gray;
     background-color: $color-white;
     margin-top: 16px;
     display: flex;
@@ -484,7 +485,7 @@ transition: 1s;
     }
     &:hover .price{
 position: relative;
-right: 40px;
+right: 15%;
     }
     &:hover .fa-circle-check{
       // opacity: 1;
@@ -523,6 +524,7 @@ right: 40px;
     height: 100%;
     background-color: $color-tertiary;
     border-radius: 0 10px 10px 0;
+    box-shadow: 3px 3px 3px $color-gray;
     justify-content: center;
     align-items: center;
     transform: scaleX(0);
@@ -532,6 +534,7 @@ right: 40px;
   margin-left: 3%;
   text-transform: uppercase;
   font-weight: 300;
+  text-decoration: 2px underline $color-tertiary;
 }
 .dish-1{
   display: flex;
