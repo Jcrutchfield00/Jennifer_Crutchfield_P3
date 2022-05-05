@@ -59,7 +59,7 @@ animation-duration: 3s;
 }
 .loader {
   position: absolute;
-  bottom: 30%;
+  bottom: 20%;
   border: 16px transparent $color-light-primary;
   border-top: 16px solid $color-tertiary;
   border-bottom: 16px solid $color-tertiary;
@@ -233,7 +233,7 @@ nav {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  // width: 375px;
+ width: 375px;
   // width: 100%;
   background-color: darken($color: $color-gray, $amount: 55%);
   color: $color-white;
@@ -407,8 +407,12 @@ transition: 1s;
   align-items: center;
   font-size: x-large;
 }
+.menu_images{
+  text-align: center;
+}
  .menu_images img{
-  width: 100%;
+   max-width: 375px;
+  // width: 100%;
   position: relative;
   opacity: 0;
   animation-name: appear;
@@ -416,25 +420,32 @@ transition: 1s;
   animation-fill-mode: forwards;
 }
 
-.menu{
-  border: 2px solid $color-gray;
-  // background-color: $color-lightgray;
-  width: 375px;
-  height: 1197px;
-  margin-left: auto;
-  margin-right: auto;
-}
+// .menu{
+//   border: 2px solid $color-gray;
+//   // background-color: $color-lightgray;
+//   max-width: 375px;
+//   height: 1197px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 .menu_sub{
   background-color: $color-lightgray;
   // border: 2px solid $color-gray;
+  width: 375px;
+  height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 35px 35px 0 0;
   position: relative;
-  bottom: 55px;
+  // bottom: 55px;
 }
 .menu_sub_header{
   font-family: 'Shrikhand', cursive;
   letter-spacing: .7px;
   margin-left: 3%;
+  margin-top: -15%;
+  padding-top: 20px;
+  margin-bottom: 0;
   position: relative;
   opacity: 0;
   animation-name: appear;
@@ -564,6 +575,10 @@ right: 15%;
   position: relative;
  }
 
+//  .menu_footer{
+//    position: relative;
+//    top: -55px;
+//  }
 @media all and (min-width:764px) and (max-width:1143px) {
   .loader {
     bottom: 15%;
