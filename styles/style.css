@@ -163,7 +163,7 @@
           justify-content: center;
   -ms-flex-item-align: center;
       align-self: center;
-  margin-top: 15%;
+  margin-top: 5%;
   opacity: 0;
   position: relative;
   -webkit-animation-name: order;
@@ -487,7 +487,7 @@ nav {
           flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  width: 375px;
+  width: 100%;
   background-color: #3a3a3a;
   color: #fff;
 }
@@ -664,14 +664,13 @@ nav {
 }
 
 .back {
-  width: 375px;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: x-large;
 }
 
 .menu_images {
@@ -679,7 +678,7 @@ nav {
 }
 
 .menu_images img {
-  max-width: 375px;
+  width: 100%;
   position: relative;
   opacity: 0;
   -webkit-animation-name: appear;
@@ -692,12 +691,9 @@ nav {
 
 .menu_sub {
   background-color: #f9f9f9;
-  width: 375px;
-  height: 1000px;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 35px 35px 0 0;
   position: relative;
+  padding-bottom: 5%;
 }
 
 .menu_sub_header {
@@ -721,7 +717,10 @@ nav {
   0% {
     opacity: 0;
   }
-  25% {
+  50% {
+    opacity: 0;
+  }
+  75% {
     opacity: 0;
   }
   100% {
@@ -733,7 +732,10 @@ nav {
   0% {
     opacity: 0;
   }
-  25% {
+  50% {
+    opacity: 0;
+  }
+  75% {
     opacity: 0;
   }
   100% {
@@ -768,13 +770,6 @@ nav {
           box-shadow: 3px 3px 3px #c6c6c6;
   background-color: #fff;
   margin-top: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   line-height: 0;
 }
 
@@ -835,14 +830,11 @@ nav {
           transform: scaleX(0);
 }
 
-.menu_course {
+.menu_course-line {
   margin-left: 3%;
   text-transform: uppercase;
   font-weight: 300;
   padding-bottom: 12px;
-}
-
-.menu_course-line {
   border-bottom: 2px solid #99e2d0;
   -o-border-image: linear-gradient(to right, #99e2d0 50%, transparent 50%) 100% 1;
      border-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #99e2d0), color-stop(50%, transparent)) 100% 1;
@@ -923,9 +915,6 @@ nav {
   .restaurants_header {
     font-size: 30px;
   }
-  .heart_solid {
-    left: 50px;
-  }
   .restaurants {
     background-color: #f9f9f9;
     display: -webkit-box;
@@ -958,46 +947,72 @@ nav {
     width: 100%;
   }
   .back {
-    width: 100%;
+    width: 95%;
+    font-size: medium;
   }
-  .fa-heart::before {
-    font-size: 34px;
+  .menu_images img {
+    height: 300px;
+    -o-object-fit: fill;
+       object-fit: fill;
+    position: relative;
+    bottom: 15px;
+    text-align: center;
   }
   .menu {
-    width: 100%;
-    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-  .menu_heart {
-    left: 46px;
+  .menu_sub {
+    background-color: #f9f9f9;
+    border-radius: 35px 35px 0 0;
+    position: relative;
   }
   .menu_sub_header {
-    font-size: 34px;
+    margin-top: -8%;
   }
-  .menu_dish {
-    line-height: 1;
-    font-size: 24px;
-  }
-  .menu_dish:hover .price {
-    right: 150px;
-  }
-  .fa-circle-check {
-    font-size: 40px;
+  .menu_course {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 45%;
   }
   .dish-1-desc {
-    font-size: 20px;
-  }
-  .price {
-    font-size: 24px;
+    font-size: 12px;
   }
   .order_button {
-    font-size: 24px;
+    margin-top: 5%;
   }
   .footer {
-    width: 100%;
-    font-size: 24px;
+    font-size: 20px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .footer_header {
-    font-size: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    font-size: 30px;
+  }
+  .footer_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-left: 0;
   }
 }
 
@@ -1098,52 +1113,151 @@ nav {
     font-size: 30px;
   }
   .heart_solid {
-    left: 56px;
+    left: 42px;
   }
   .back {
-    width: 100%;
+    width: 95%;
+    font-size: large;
+  }
+  .menu_images img {
+    height: 400px;
+    -o-object-fit: fill;
+       object-fit: fill;
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .menu_sub {
+    background-color: #f9f9f9;
+    border-radius: 35px 35px 0 0;
+    position: relative;
+  }
+  .menu_sub_header {
+    margin-top: -9%;
+  }
+  .menu_course {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 30%;
+  }
+  .dish-1-desc {
+    font-size: 12px;
+  }
+  .footer {
+    font-size: 20px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    font-size: 30px;
+  }
+  .footer_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-left: 0;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .back {
+    width: 95%;
+    font-size: x-large;
+  }
+  .menu_images img {
+    height: 400px;
+    -o-object-fit: fill;
+       object-fit: fill;
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .menu_sub {
+    background-color: #f9f9f9;
+    border-radius: 35px 35px 0 0;
+    position: relative;
+    z-index: 0;
+  }
+  .menu_course {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 30%;
   }
   .menu {
     width: 100%;
     height: 100%;
   }
   .menu_sub_header {
-    font-size: 48px;
-  }
-  .menu_heart {
-    left: 52px;
-  }
-  .fa-heart::before {
-    font-size: 40px;
-  }
-  .menu_course {
     font-size: 30px;
   }
-  .menu_dish {
-    line-height: 1;
-    font-size: 30px;
+  .menu_course-line {
+    font-size: 24px;
   }
-  .menu_dish:hover .price {
-    right: 230px;
+  .dish-1 {
+    font-size: 18px;
   }
   .dish-1-desc {
-    font-size: 28px;
-  }
-  .price {
-    font-size: 28px;
-  }
-  .fa-circle-check {
-    font-size: 40px;
-  }
-  .order_button {
-    font-size: 32px;
+    font-size: 14px;
   }
   .footer {
-    width: 100%;
-    font-size: 28px;
+    font-size: 20px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .footer_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     font-size: 30px;
+  }
+  .footer_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

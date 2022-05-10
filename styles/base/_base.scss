@@ -233,8 +233,8 @@ nav {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
- width: 375px;
-  // width: 100%;
+//  min-width: 375px;
+   width: 100%;
   background-color: darken($color: $color-gray, $amount: 55%);
   color: $color-white;
 
@@ -402,17 +402,17 @@ transition: 1s;
   justify-content: center;
 }
 .back{
-  width: 375px;
+  width: 95%;
   display: flex;
   align-items: center;
-  font-size: x-large;
+  // font-size: x-large;
 }
 .menu_images{
   text-align: center;
 }
  .menu_images img{
-   max-width: 375px;
-  // width: 100%;
+  //  min-width: 375px;
+   width: 100%;
   position: relative;
   opacity: 0;
   animation-name: appear;
@@ -431,13 +431,14 @@ transition: 1s;
 .menu_sub{
   background-color: $color-lightgray;
   // border: 2px solid $color-gray;
-  width: 375px;
-  height: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  // min-width: 375px;
+  // height: 1000px;
+  // margin-left: auto;
+  // margin-right: auto;
   border-radius: 35px 35px 0 0;
   position: relative;
   // bottom: 55px;
+  padding-bottom: 5%;
 }
 .menu_sub_header{
   font-family: 'Shrikhand', cursive;
@@ -457,8 +458,11 @@ transition: 1s;
   0%{
     opacity: 0;
   }
-  25%{
+  50%{
       opacity: 0;
+  }
+  75%{
+    opacity: 0;
   }
   100%{
   opacity: 1;
@@ -484,10 +488,16 @@ transition: 1s;
     box-shadow: 3px 3px 3px $color-gray;
     background-color: $color-white;
     margin-top: 16px;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     line-height: 0;
     // position: relative;
+//  not working for the ... i have tried display: inline-block; also
+    // overflow: hidden;
+    // white-space: nowrap;
+    // text-overflow: ellipsis;
+    // width: 100%;
+
     &:hover .checkmark{
       transition: transform;
       transition: transform .5s;
@@ -541,14 +551,12 @@ right: 15%;
     transform: scaleX(0);
 
 }
-.menu_course{
+
+.menu_course-line{
   margin-left: 3%;
   text-transform: uppercase;
   font-weight: 300;
   padding-bottom: 12px;
-}
-
-.menu_course-line{
  border-bottom: 2px solid $color-tertiary;
   border-image: linear-gradient(to right, $color-tertiary 50%, transparent 50%) 100% 1;
 
@@ -560,6 +568,7 @@ right: 15%;
    }
 
 }
+
 .dish-1{
   display: flex;
   font-weight: 600;
@@ -574,11 +583,8 @@ right: 15%;
   font-weight: 600;
   position: relative;
  }
+ 
 
-//  .menu_footer{
-//    position: relative;
-//    top: -55px;
-//  }
 @media all and (min-width:764px) and (max-width:1143px) {
   .loader {
     bottom: 15%;
@@ -624,9 +630,9 @@ right: 15%;
   .restaurants_header {
     font-size: 30px;
   }
-  .heart_solid {
-    left: 50px;
-  }
+  // .heart_solid {
+  //   left: 50px;
+  // }
 
   .restaurants {
     background-color: $color-lightgray;
@@ -661,52 +667,122 @@ right: 15%;
   // }
 
   // menu
-  .back{
-    width: 100%;
-  }
-  .fa-heart::before {
-    font-size: 34px;
-  }
-  .menu{
-    width: 100%;
-    height: 100%;
-  }
-  .menu_heart{
-    left: 46px;
-  }
-  .menu_sub_header{
-    font-size: 34px;
-  }
-  .menu_dish{
-      line-height: 1;
-      font-size: 24px;
-      &:hover .price{
-  right: 150px;
-      }
-  }
-  .fa-circle-check{
-    font-size: 40px;
-   }
+//   .back{
+//     width: 100%;
+//     margin-left: auto;
+//   }
+//   .fa-heart::before {
+//     font-size: 34px;
+//   }
+//   .menu{
+//     width: 100%;
+//     height: 100%;
+//   }
+//   .menu_heart{
+//     left: 46px;
+//   }
+//   .menu_sub_header{
+//     font-size: 34px;
+//   }
+//   .menu_dish{
+//       line-height: 1;
+//       font-size: 24px;
+//       &:hover .price{
+//   right: 150px;
+//       }
+//   }
+//   .fa-circle-check{
+//     font-size: 40px;
+//    }
 
-  .dish-1-desc{
-    font-size: 20px;
-  }
-  .price{
-   font-size: 24px;
+//   .dish-1-desc{
+//     font-size: 20px;
+//   }
+//   .price{
+//    font-size: 24px;
+//    }
+//    .order_button{
+//         font-size: 24px;
+// }
+
+//   .footer{
+//     width: 100%;
+//     font-size: 24px;
+//   }
+//   .footer_header{
+//     font-size: 28px;
+//   }
+// menu new style @media all and (min-width:764px) and (max-width:1143px)
+.back{
+  width: 95%;
+font-size: medium;
+}
+// .menu_images{
+// // width: 900px;
+// margin-left: auto;
+// margin-right: auto;
+// }
+.menu_images img{
+height: 300px;
+object-fit: fill;
+// object-fit: cover; it looks better but i dont feel like it shows the dish good enough
+position: relative;
+bottom: 15px;
+text-align: center;
+}
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
    }
+    .menu_sub{
+      background-color: $color-lightgray;
+      // border: 2px solid $color-gray;
+      // width: 900px;
+      // height: 720px;
+      // margin-left: auto;
+      // margin-right: auto;
+      border-radius: 35px 35px 0 0;
+      position: relative;
+      // bottom: 55px;
+    }
+    .menu_sub_header{
+      margin-top: -8%;
+ 
+    }
+
+    .menu_course{
+      display: flex;
+      flex-direction: column;
+      width: 45%;
+    }
+ 
+    .dish-1-desc{
+     font-size: 12px;
+       }
    .order_button{
-        font-size: 24px;
+    margin-top: 5%;
+             }
+             .footer{
+              // width: 900px;
+          font-size: 20px;
+       position: relative;
+       display: flex;
+     
+       }
+        .footer_header{
+          display: flex;
+          flex-basis: 100%;
+        font-size: 30px;
+       }
+      
+     .footer_list{
+       display: flex;
+       justify-content: space-around;
+     padding-left: 0;
+     }     
 }
 
-  .footer{
-    width: 100%;
-    font-size: 24px;
-  }
-  .footer_header{
-    font-size: 28px;
-  }
-
-}
 
 @media all and (min-width:1144px) {
   .loader {
@@ -799,55 +875,181 @@ right: 15%;
   }
 
   .heart_solid {
-    left: 56px;
+    left: 42px;
   }
   // menu
   .back{
-    width: 100%;
+    width: 95%;
+ font-size: large;
   }
+// .menu_images{
+//   // width: 1100px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+.menu_images img{
+  height: 400px;
+  object-fit: fill;
+  // object-fit: cover; it looks better but i dont feel like it shows the dish good enough
+  position: relative;
+  bottom: 15px;
+  text-align: center;
+}
+  .menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+     }
+      .menu_sub{
+        background-color: $color-lightgray;
+        // border: 2px solid $color-gray;
+        // width: 1100px;
+        // height: 500px;
+        // margin-left: auto;
+        // margin-right: auto;
+        border-radius: 35px 35px 0 0;
+        position: relative;
+        // bottom: 55px;
+      }
+      .menu_sub_header{
+        margin-top: -9%;
+      }
+      .menu_course{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+      }
+    
+    
+      .dish-1-desc{
+       font-size: 12px;
+         }
+    //  .order_button{
+    //   margin-top: 5%;
+    //            }
+               .footer{
+                // width: 1100px;
+            font-size: 20px;
+         position: relative;
+         display: flex;
+       
+         }
+          .footer_header{
+            display: flex;
+            flex-basis: 100%;
+          font-size: 30px;
+         }
+        
+       .footer_list{
+         display: flex;
+         justify-content: space-around;
+       padding-left: 0;
+       }     
+  
+}
+  @media all and (min-width:1280px) {
+    .back{
+      width: 95%;
+   font-size: x-large;
+    }
+  // .menu_images{
+  //   // width: 1200px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
+  .menu_images img{
+    height: 400px;
+    object-fit: fill;
+    // object-fit: cover; it looks better but i dont feel like it shows the dish good enough
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+  }
+ .menu{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+ }
+  .menu_sub{
+    background-color: $color-lightgray;
+    // border: 2px solid $color-gray;
+    // width: 1200px;
+    // height: 650px;
+    // margin-left: auto;
+    // margin-right: auto;
+    border-radius: 35px 35px 0 0;
+    position: relative;
+  //  bottom: -75px;
+   z-index: 0;
+  }
+  
+  .menu_course{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+
+      // position: relative;
+
   .menu{
     width: 100%;
-    height: 100%;
+   height: 100%;
   }
-  .menu_sub_header{
-    font-size: 48px;
-  }
-  .menu_heart {
-    left: 52px;
-  }
-  .fa-heart::before {
-    font-size: 40px;
-  }
-  .menu_course{
+ .menu_sub_header{
     font-size: 30px;
-  }
-  .menu_dish{
-      line-height: 1;
-      font-size: 30px;
-      &:hover .price{
-        right: 230px;
-            }
-  }
 
-  .dish-1-desc{
-    font-size: 28px;
-  }
-  .price{
-   font-size: 28px;
+      // margin-top: -15%;
+
+    }
+  
+//   .menu_heart {
+//     left: 52px;
+//   }
+//   .fa-heart::before {
+//     font-size: 40px;
+//   }
+   .menu_course-line{
+    font-size: 24px;
    }
-   .fa-circle-check{
-    font-size: 40px;
-   }
-   .order_button{
-        font-size: 32px;
+//   .menu_dish{
+//       line-height: 1;
+//       font-size: 30px;
+//       &:hover .price{
+//         right: 230px;
+//             }
+//   }
+.dish-1{
+  font-size: 18px;
 }
+  .dish-1-desc{
+   font-size: 14px;
+     }
+//   .price{
+//    font-size: 28px;
+//    }
+//    .fa-circle-check{
+//     font-size: 40px;
+//    }
+//  .order_button{
+//   margin-top: -28%;
+//            }
 
   .footer{
-    width: 100%;
-    font-size: 28px;
-  }
-  .footer_header{
-    font-size: 30px;
-  }
+        //  width: 1200px;
+     font-size: 20px;
+  position: relative;
+  display: flex;
 
+  }
+   .footer_header{
+     display: flex;
+     flex-basis: 100%;
+   font-size: 30px;
+  }
+ 
+.footer_list{
+  display: flex;
+  justify-content: space-around;
+padding-left: 0;
+}
 }
