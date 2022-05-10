@@ -596,37 +596,23 @@ nav {
   margin-right: 30px;
 }
 
-.heart_empty {
-  background-color: transparent;
-  border: transparent;
-  opacity: 1;
+.heart-empty::before {
+  color: black;
+  z-index: -1;
 }
 
-.heart_empty:hover {
-  opacity: 0;
-}
-
-.heart_solid {
+.heart-full::before {
   position: relative;
-  left: 38px;
-  opacity: 0;
-  background-color: transparent;
-  border: transparent;
-  color: #ff79da;
+  left: 24px;
+  z-index: 5;
   -webkit-transition: 1s;
   transition: 1s;
+  opacity: 0;
+  color: #ff79da;
 }
 
-.heart_solid:hover {
+.heart-full::before:hover {
   opacity: 1;
-}
-
-.fa-regular::before {
-  color: black;
-}
-
-.fa-heart::before {
-  font-size: 22px;
 }
 
 .fa-heart:hover::before {
@@ -743,10 +729,6 @@ nav {
   }
 }
 
-.menu_heart {
-  left: 34px;
-}
-
 .menu_content_right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -770,6 +752,13 @@ nav {
           box-shadow: 3px 3px 3px #c6c6c6;
   background-color: #fff;
   margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   line-height: 0;
 }
 
@@ -1109,12 +1098,6 @@ nav {
   .content_left {
     font-size: 20px;
   }
-  .fa-heart::before {
-    font-size: 30px;
-  }
-  .heart_solid {
-    left: 42px;
-  }
   .back {
     width: 95%;
     font-size: large;
@@ -1226,6 +1209,9 @@ nav {
   }
   .menu_sub_header {
     font-size: 30px;
+  }
+  .heart-full::before {
+    left: 30px;
   }
   .menu_course-line {
     font-size: 24px;
