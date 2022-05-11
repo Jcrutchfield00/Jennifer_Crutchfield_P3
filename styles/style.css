@@ -603,7 +603,7 @@ nav {
 
 .heart-full::before {
   position: relative;
-  left: 24px;
+  left: 20px;
   z-index: 5;
   -webkit-transition: 1s;
   transition: 1s;
@@ -612,6 +612,25 @@ nav {
 }
 
 .heart-full::before:hover {
+  opacity: 1;
+}
+
+.menu-heart-empty::before {
+  color: black;
+  z-index: -1;
+}
+
+.menu-heart-full::before {
+  position: relative;
+  left: 24px;
+  z-index: 5;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+  color: #ff79da;
+}
+
+.menu-heart-full::before:hover {
   opacity: 1;
 }
 
@@ -1210,7 +1229,7 @@ nav {
   .menu_sub_header {
     font-size: 30px;
   }
-  .heart-full::before {
+  .menu-heart-full::before {
     left: 30px;
   }
   .menu_course-line {

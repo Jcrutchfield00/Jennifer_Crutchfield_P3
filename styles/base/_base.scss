@@ -356,13 +356,27 @@ nav {
 //     opacity: 1;
 //   }
 // }
-
-//  end
 .heart-empty::before {
   color: black;
   z-index: -1;
 }
 .heart-full::before{
+position: relative;
+left: 20px;
+z-index: 5;
+transition: 1s;
+opacity: 0;
+color: $color-secondary;
+&:hover{
+  opacity: 1;
+}
+}
+//  end
+.menu-heart-empty::before {
+  color: black;
+  z-index: -1;
+}
+.menu-heart-full::before{
 position: relative;
 left: 24px;
 z-index: 5;
@@ -1010,7 +1024,7 @@ justify-content: space-around;
       // margin-top: -15%;
 
     }
-    .heart-full::before{
+    .menu-heart-full::before{
       left: 30px;
       }
 //   .menu_heart {
