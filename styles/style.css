@@ -367,7 +367,7 @@ body {
 .logo {
   -o-object-fit: contain;
      object-fit: contain;
-  width: 375px;
+  width: 270px;
   height: 50px;
   display: block;
   margin-left: auto;
@@ -386,16 +386,16 @@ body {
 
 .gps {
   line-height: 50px;
-  font-size: 20px;
+  font-size: 16px;
   border: 1px solid transparent;
 }
 
 .header_bold {
-  font-size: 30px;
+  font-size: 22px;
 }
 
 .header_p {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 nav {
@@ -440,9 +440,8 @@ nav {
 }
 
 .how_to_button {
-  font-weight: 600;
-  width: 300px;
-  padding: 20px;
+  font-size: 12px;
+  padding: 14px;
   border-radius: 20px;
   border: transparent;
   background-color: #f9f9f9;
@@ -454,7 +453,7 @@ nav {
   color: #9356dc;
 }
 
-.fa-lg {
+.nav-icon {
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -593,6 +592,7 @@ nav {
 }
 
 .content_left {
+  font-size: 11px;
   margin-left: 10px;
   margin-right: auto;
 }
@@ -609,7 +609,7 @@ nav {
 
 .heart-full::before {
   position: relative;
-  left: 20px;
+  left: 24px;
   z-index: 5;
   -webkit-transition: 1s;
   transition: 1s;
@@ -891,6 +891,26 @@ nav {
 }
 
 @media all and (min-width: 356px) {
+  .logo {
+    width: 375px;
+  }
+  .gps {
+    font-size: 20px;
+  }
+  .header_bold {
+    font-size: 30px;
+  }
+  .header_p {
+    font-size: 20px;
+  }
+  .how_to_button {
+    font-weight: 600;
+    padding: 20px;
+    width: 300px;
+  }
+  .content_left {
+    font-size: 16px;
+  }
   .menu_sub_header {
     font-size: 1.5em;
     margin-top: -15%;
