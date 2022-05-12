@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,60 +7,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./styles/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,900i" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1ec04bc473.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div><a class="homepage" href="index.html">back button</a></div>
-   <h1 class="logo"><img src="Projet3-ohmyfoodEN/images/logo/ohmyfood.png" alt="Oh My Food"> </h1>
-        </header>
-        <div class="menu_images"><img src="Projet3-ohmyfoodEN/images/restaurants/gourmand.jpg" alt="Le Gourmand">
-        <section>
-        <h2>Le Gourmand</h2>
-        <article>
-            <h3 class="menu">Entrees</h3>
-            <div class="menu_entrees">
-                <h5>Tuna Carpaccio</h5>
-                <p>Seasoned with yuzo 25€</p>
-                <h5>Crunchy Lobster Croquets</h5>
-                <p>With seasonal vegetables 35€</p>
-                <h5>Mushroom soup</h5>
-                <p>With truffles 20€</p>
+    <header class="menu_header">
+        <div class="back"><a class="homepage" href="index.html"><i class="fa-solid fa-arrow-left fa-lg"></i></a>
+        <h1 class="logo"><img src="Projet3-ohmyfoodEN/images/logo/ohmyfood.png" alt="Oh My Food"> </h1>
+        </div>
+    </header>
+            <div class="menu_images">
+                <img src="Projet3-ohmyfoodEN/images/restaurants/gourmand.jpg" alt=" Le Gourmand">
             </div>
-            <h3 class="menu_main">Main Dish</h3>
-            <div>
-                <h5>Roast Chicken with Provincal Herbs</h5>
-                <p>With truffle cream 40€</p>
-                <h5>Roasted Lobster</h5>
-                <p>With seasonal vegetables 35€</p>
-                <h5>Angust Beef Ribs</h5>
-                <p>With mashed parshnips 44€</p>
+            <section class="menu_sub">   
+        <h2 class="menu_sub_header">Le Gourmand<span class="menu_content_right">
+            <i class="fa-solid fa-heart menu-heart-full"></i>
+         <i class="fa-regular fa-heart menu-heart-empty"></i>
+        </span>    </h2>
+        <div class="menu">
+            <div class="menu_course">
+            <p class= "fade"><span class="menu_course-line">Entrees</span></p>
+            <div class="menu_dish fade">
+                <p class="dish-1">Tuna Carpaccio</p>
+                <p class="dish-1-desc">Seasoned with yuzo<span class="price">25€</span></p>
+                <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
+                <div class="menu_dish fade">
+                <p class="dish-1">Crunchy Lobster Croquets</p>
+                <p class="dish-1-desc">With seasonal vegetables<span class="price">35€</span></p>
+                <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
+                <div class="menu_dish fade">
+                <p class="dish-1">Mushroom soup</p>
+                <p class="dish-1-desc">With truffles<span class="price">20€</span></p>
+                <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
             </div>
-            <h3 class="menu_desserts">Desserts</h3>
-            <div>
-                <h5>Assorted Dessert Plate</h5>
-                <p>Chef's choice 18€</p>
-                <h5>Creme brulee</h5>
-                <p>Revisited 22€</p>
-                <h5>Tiramisu</h5>
-                <p>With hazelnuts 23€</p>
             </div>
-        </article>
-    </section>
+            <div class="menu_course">
+            <p class="fade-1"><span class="menu_course-line">Main Dish</span></p>
+            <div class="menu_dish fade-1">
+                <p class="dish-1">Roast Chicken with Provincal Herbs</p>
+                <p class="dish-1-desc">With truffle cream<span class="price">40€</span></p>
+                <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
+            </div>
+            <div class="menu_dish fade-1">
+                <p class="dish-1">Roasted Lobster</p>
+                <p class="dish-1-desc">With seasonal vegetables<span class="price">35€</span></p>
+                <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
+            </div>
+            <div class="menu_dish fade-1">
+                <p class="dish-1">Angust Beef Rib</p>
+                <p class="dish-1-desc">With mashed parshnips<span class="price">44€</span></p>
+                <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
+            </div>
+            <div class="menu_course">
+            <p class="fade-2"><span class="menu_course-line">Desserts</span></p>
+            <div class="menu_dish fade-2">
+                <p class="dish-1">Assorted Dessert Plate</p>
+                <p class="dish-1-desc">Chef's choice<span class="price">18€</span></p>
+                <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
+            </div>
+            <div class="menu_dish fade-2">
+                <p class="dish-1">Creme brulee</p>
+                <p class="dish-1-desc">Revisited <span class="price">22€</span></p>
+                <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
+                <div class="menu_dish fade-2">
+                <p class="dish-1">Tiramisu</p>
+                <p class="dish-1-desc">With hazelnuts<span class="price">23€</span></p>
+                <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
+            </div>
+        </div>
     <div class="order_button">Order</div>
+            
+</section>
     <footer class="footer">
         <h4 class="footer_header">OhMyFood</h4>
         <ul class="footer_list">
             <li class="footer_list_item"><a class="white" href="#"><i class="fa-solid fa-utensils"></i>Suggest a restaurant</a></li>
             <li class="footer_list_item"><a class="white" href="#"><i class="fa-solid fa-handshake-angle"></i>Become a partner</a></li>
-            <li class="footer_list_item"><a class="white" href="#">Legal</li></a>
+            <li class="footer_list_item"><a class="white" href="#">Legal</a></li>
             <li class="footer_list_item"><a class="white" href="#" target="_blank">Contact</a></li>
         </ul>
     </footer> 
 </body>
-
 </html>
