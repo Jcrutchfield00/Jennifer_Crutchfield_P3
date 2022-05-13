@@ -789,7 +789,6 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  line-height: 0;
 }
 
 .menu_dish:hover .checkmark {
@@ -866,23 +865,18 @@ nav {
      border-image: linear-gradient(to right, #99e2d0 50%, #99e2d0 50%) 100% 1;
 }
 
-.dish-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: 600;
-  margin-bottom: 10px;
-  font-size: 13px;
+.menu_dish p {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  text-overflow: ellipsis;
+  border: 1px solid #AAAAAA;
 }
 
-.dish-1-desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 10px;
+.dish-1 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  height: 30px;
 }
 
 .price {

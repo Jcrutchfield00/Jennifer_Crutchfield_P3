@@ -528,7 +528,7 @@ object-fit: cover;
     margin-top: 16px;
      display: flex;
      flex-direction: column;
-    line-height: 0;
+   
     // position: relative;
 //  not working for the ... i have tried display: inline-block; also
     // overflow: hidden;
@@ -606,18 +606,32 @@ right: 15%;
    }
 
 }
+.menu_dish p{
 
+  overflow: hidden;
+// display: inline-block; dont have to specify inline block
+  white-space: nowrap;
+
+  width: 100%;
+
+  text-overflow: ellipsis;
+
+  border: 1px solid #AAAAAA;
+
+}
 .dish-1{
-  display: flex;
+  // display: flex; 
   font-weight: 600;
   margin-bottom: 10px;
-  font-size: 13px;
+  height: 30px;
+  // width: 100%;
+  // font-size: 13px; 5/12
 }
-.dish-1-desc{
-  display: flex;
-  justify-content: space-between;
-  font-size: 10px;
-}
+// .dish-1-desc{
+//   display: flex;
+//   justify-content: space-between;
+//   font-size: 10px;
+// } 5/12
 .price{
   font-weight: 600;
   position: relative;
