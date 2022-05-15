@@ -807,7 +807,6 @@ nav {
 }
 
 .menu_dish:hover .price {
-  position: relative;
   right: 15%;
 }
 
@@ -868,7 +867,7 @@ nav {
 .menu_dish p {
   overflow: hidden;
   white-space: nowrap;
-  width: 100%;
+  width: 75%;
   text-overflow: ellipsis;
   border: 1px solid #AAAAAA;
 }
@@ -881,7 +880,9 @@ nav {
 
 .price {
   font-weight: 600;
-  position: relative;
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
 }
 
 @media all and (min-width: 356px) {
