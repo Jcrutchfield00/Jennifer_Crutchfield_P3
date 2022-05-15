@@ -619,7 +619,7 @@ right: 15%;
 
   text-overflow: ellipsis;
 
-  border: 1px solid #AAAAAA;
+  // border: 1px solid #AAAAAA;
 
 }
 .dish-1{
@@ -682,12 +682,12 @@ right: 15%;
   .menu_sub_header{
     margin-top: -15%;
   }
-  .dish-1{
-font-size: 16px;
-  }
-  .dish-1-desc{
-    font-size: 13px;
-  }
+//   .dish-1{
+// font-size: 16px;
+//   }
+//   .dish-1-desc{
+//     font-size: 13px;
+//   }
   .menu-heart-full::before{
   left: 24px;
   }
@@ -865,9 +865,9 @@ text-align: center;
       width: 45%;
     }
  
-    .dish-1-desc{
-     font-size: 12px;
-       }
+    // .dish-1-desc{
+    //  font-size: 12px;
+    //    }
    .order_button{
     margin-top: 5%;
              }
@@ -1029,9 +1029,9 @@ text-align: center;
       }
     
     
-      .dish-1-desc{
-       font-size: 12px;
-         }
+      // .dish-1-desc{
+      //  font-size: 12px;
+      //    }
     //  .order_button{
     //   margin-top: 5%;
     //            }
@@ -1128,12 +1128,12 @@ justify-content: space-around;
 //         right: 230px;
 //             }
 //   }
-.dish-1{
-  font-size: 18px;
-}
-  .dish-1-desc{
-   font-size: 14px;
-     }
+// .dish-1{
+//   font-size: 18px;
+// }
+//   .dish-1-desc{
+//    font-size: 14px;
+//      }
 //   .price{
 //    font-size: 28px;
 //    }

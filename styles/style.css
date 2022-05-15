@@ -873,7 +873,6 @@ figure {
   white-space: nowrap;
   width: 75%;
   text-overflow: ellipsis;
-  border: 1px solid #AAAAAA;
 }
 
 .dish-1 {
@@ -919,12 +918,6 @@ figure {
   }
   .menu_sub_header {
     margin-top: -15%;
-  }
-  .dish-1 {
-    font-size: 16px;
-  }
-  .dish-1-desc {
-    font-size: 13px;
   }
   .menu-heart-full::before {
     left: 24px;
@@ -1045,9 +1038,6 @@ figure {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 45%;
-  }
-  .dish-1-desc {
-    font-size: 12px;
   }
   .order_button {
     margin-top: 5%;
@@ -1204,9 +1194,6 @@ figure {
             flex-direction: column;
     width: 30%;
   }
-  .dish-1-desc {
-    font-size: 12px;
-  }
   .footer {
     font-size: 20px;
     position: relative;
@@ -1282,12 +1269,6 @@ figure {
   }
   .menu_course-line {
     font-size: 24px;
-  }
-  .dish-1 {
-    font-size: 18px;
-  }
-  .dish-1-desc {
-    font-size: 14px;
   }
   .footer {
     font-size: 20px;
