@@ -188,7 +188,7 @@ nav {
 
 .search_link {
   text-decoration: none;
-  color: black;
+  color: $color-black;
 }
 
 .how_to_button {
@@ -202,14 +202,14 @@ nav {
   margin-top: 16px;
   // display: flex;
   // justify-content: space-between;
-
+@include nav_shadow;
   &:hover {
     background-color: lighten($color-primary, 30%);
     color: $color-primary;
   }
 }
 .text_hover-black{
-  color: black;
+  color: $color-black;
 }
 
 // create a better gray with a mixin or function
@@ -301,8 +301,9 @@ nav {
   position: relative;
   display: flex;
   flex-direction: column;
-  box-shadow: 5px 5px 5px $color-gray;
+  // box-shadow: 5px 5px 5px $color-gray;
   // border: 2px solid $color-primary;
+  @include card_shadow;
   margin-left: 15px;
   margin-right: 15px;
    max-width: 340px; 
@@ -324,7 +325,8 @@ width: 73%;
 
 .restaurants_cards_content {
   // border: 2px solid $color-secondary;
-  box-shadow: 5px 5px 5px $color-gray;
+  // box-shadow: 5px 5px 5px $color-gray;
+  @include card_shadow;
   background-color: $color-white;
   border-radius: 0 0 15px 15px;
   height: 35%;
@@ -371,7 +373,7 @@ width: 73%;
 //   }
 // }
 .heart-empty::before {
-  color: black;
+  color: $color-black;
   z-index: -1;
 }
 .heart-full::before{
@@ -387,7 +389,7 @@ color: $color-secondary;
 }
 //  end
 .menu-heart-empty::before {
-  color: black;
+  color: $color-black;
   z-index: -1;
 }
 .menu-heart-full::before{
@@ -415,7 +417,7 @@ color: $color-secondary;
 //  end
 .restaurants_cards_link {
   text-decoration: none;
-  color: black;
+  color: $color-black;
 }
 
 // .image_container {
@@ -529,7 +531,8 @@ object-fit: cover;
     padding: 0px 20px 0 10px;
     border-radius: 10px;
     border: transparent;
-    box-shadow: 3px 3px 3px $color-gray;
+    @include menu_shadow;
+    // box-shadow: 3px 3px 3px $color-gray;
     background-color: $color-white;
     margin-top: 16px;
      display: flex;
@@ -589,7 +592,8 @@ right: 15%;
     height: 100%;
     background-color: $color-tertiary;
     border-radius: 0 10px 10px 0;
-    box-shadow: 3px 3px 3px $color-gray;
+    // box-shadow: 3px 3px 3px $color-gray;
+    @include menu_shadow;
     justify-content: center;
     align-items: center;
     transform: scaleX(0);

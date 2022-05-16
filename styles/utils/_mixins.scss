@@ -1,0 +1,15 @@
+@mixin button_shadow {
+    box-shadow: 3px 3px 3px $color-gray;
+}
+@mixin button_shadow-hover {
+    box-shadow: 10px 5px 5px $color-gray;
+}
+@mixin card_shadow {
+    box-shadow: 5px 5px 5px $color-gray;
+}
+@mixin menu_shadow {
+    box-shadow: 3px 3px 3px $color-gray;
+}
+@mixin nav_shadow {
+    box-shadow: 3px 3px 3px $color-gray;
+}

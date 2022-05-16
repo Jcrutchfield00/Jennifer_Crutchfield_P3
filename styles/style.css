@@ -120,8 +120,6 @@
   border-radius: 50px;
   background: linear-gradient(175deg, #ff79da, #9356dc);
   color: #fff;
-  -webkit-box-shadow: 3px 3px 3px #c6c6c6;
-          box-shadow: 3px 3px 3px #c6c6c6;
   width: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,14 +130,16 @@
   -ms-flex-item-align: center;
       align-self: center;
   margin-top: 10px;
+  -webkit-box-shadow: 3px 3px 3px #c6c6c6;
+          box-shadow: 3px 3px 3px #c6c6c6;
 }
 
 .explore_button:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  -webkit-box-shadow: 5px 5px 5px #c6c6c6;
-          box-shadow: 5px 5px 5px #c6c6c6;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
   background: linear-gradient(175deg, #ff8de0, #9e67e0);
+  -webkit-box-shadow: 10px 5px 5px #c6c6c6;
+          box-shadow: 10px 5px 5px #c6c6c6;
 }
 
 .order_button {
@@ -152,8 +152,6 @@
   border-radius: 50px;
   background: linear-gradient(175deg, #ff79da, #9356dc);
   color: #fff;
-  -webkit-box-shadow: 3px 3px 3px #c6c6c6;
-          box-shadow: 3px 3px 3px #c6c6c6;
   width: 190px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,6 +162,8 @@
   -ms-flex-item-align: center;
       align-self: center;
   margin-top: 5%;
+  -webkit-box-shadow: 3px 3px 3px #c6c6c6;
+          box-shadow: 3px 3px 3px #c6c6c6;
   opacity: 0;
   position: relative;
   -webkit-animation-name: order;
@@ -177,9 +177,9 @@
 .order_button:hover {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
+  background: linear-gradient(175deg, #ff8de0, #9e67e0);
   -webkit-box-shadow: 10px 5px 5px #c6c6c6;
           box-shadow: 10px 5px 5px #c6c6c6;
-  background: linear-gradient(175deg, #ff8de0, #9e67e0);
 }
 
 @-webkit-keyframes order {
@@ -445,6 +445,8 @@ nav {
   border: transparent;
   background-color: #f9f9f9;
   margin-top: 16px;
+  -webkit-box-shadow: 3px 3px 3px #c6c6c6;
+          box-shadow: 3px 3px 3px #c6c6c6;
 }
 
 .how_to_button:hover {
