@@ -452,6 +452,10 @@ nav {
   color: #9356dc;
 }
 
+.text_hover-black {
+  color: black;
+}
+
 .nav-icon {
   margin-left: 20px;
   margin-right: 20px;
