@@ -10,3 +10,10 @@ $color-linear: linear-gradient(175deg, $color-secondary, $color-primary);
 $color-light-primary: lighten($color-primary, 4);
 $color-light-secondary: lighten($color-secondary, 4);
 $color-light-linear: linear-gradient(175deg, $color-light-secondary, $color-light-primary);
+
+$breakpoints: (
+    mobile: 356px
+    tablet_min: 764px 
+    tablet_max: 1143px
+);
+
