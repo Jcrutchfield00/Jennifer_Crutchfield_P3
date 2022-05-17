@@ -50,6 +50,11 @@
           background: $color-light-linear;
           @include button_shadow-hover;
         }
+  @include tablet_only{
+          .order_button{
+            margin-top: 5%;
+                     }
+        }
 }
 @keyframes order{
     0%{
