@@ -1,41 +1,41 @@
 @mixin button_shadow {
-    box-shadow: 3px 3px 3px $color-gray;
+  box-shadow: 3px 3px 3px $color-gray;
 }
 @mixin button_shadow-hover {
-    box-shadow: 10px 5px 5px $color-gray;
+  box-shadow: 10px 5px 5px $color-gray;
 }
 @mixin card_shadow {
-    box-shadow: 5px 5px 5px $color-gray;
+  box-shadow: 5px 5px 5px $color-gray;
 }
 @mixin menu_shadow {
-    box-shadow: 3px 3px 3px $color-gray;
+  box-shadow: 3px 3px 3px $color-gray;
 }
 @mixin nav_shadow {
-    box-shadow: 3px 3px 3px $color-gray;
+  box-shadow: 3px 3px 3px $color-gray;
 }
 
 @mixin mobile_only {
-    @media all and (min-width: map-get($breakpoints, mobile)){
-        @content;
-    }
+  @media all and (min-width: map-get($breakpoints, mobile)) {
+    @content;
+  }
 }
 @mixin tablet {
-    @media all and (min-width: map-get($breakpoints, tablet_min)) and (max-width: map-get($breakpoints, tablet_max)) {
-@content;
-    }
+  @media all and (min-width: map-get($breakpoints, tablet_min)) and (max-width: map-get($breakpoints, tablet_max)) {
+    @content;
+  }
 }
 @mixin desktop {
-    @media all and (min-width: map-get($breakpoints, desktop)){
-        @content;
-    }
+  @media all and (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
 }
 @mixin desktop_lg {
-    @media all and (min-width: map-get($breakpoints, desktop_lg)){
-        @content;
-    }
+  @media all and (min-width: map-get($breakpoints, desktop_lg)) {
+    @content;
+  }
 }
-@mixin desktop_xlg{
-    @media all and (min-width: map-get($breakpoints, desktop_xlg)){
-        @content;
-    }
+@mixin desktop_xlg {
+  @media all and (min-width: map-get($breakpoints, desktop_xlg)) {
+    @content;
+  }
 }
