@@ -972,16 +972,12 @@ figure {
   font-weight: 300;
   padding-bottom: 12px;
   border-bottom: 2px solid $color-tertiary;
-  border-image: linear-gradient(to right, $color-tertiary 50%, transparent 50%)
-    100% 1;
+  border-image: linear-gradient(to right, $color-tertiary 50%, transparent 50%) 100% 1;
 
   &:hover {
-    border-image: linear-gradient(
-        to right,
+    border-image: linear-gradient(to right,
         $color-tertiary 50%,
-        $color-tertiary 50%
-      )
-      100% 1;
+        $color-tertiary 50%) 100% 1;
   }
 
   @include desktop_lg {
