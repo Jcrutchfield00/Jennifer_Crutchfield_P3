@@ -19,8 +19,23 @@
         @content;
     }
 }
-@mixin tablet_only {
+@mixin tablet {
     @media all and (min-width: map-get($breakpoints, tablet_min)) and (max-width: map-get($breakpoints, tablet_max)) {
 @content;
+    }
+}
+@mixin desktop {
+    @media all and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}
+@mixin desktop_lg {
+    @media all and (min-width: map-get($breakpoints, desktop_lg)){
+        @content;
+    }
+}
+@mixin desktop_xlg{
+    @media all and (min-width: map-get($breakpoints, desktop_xlg)){
+        @content;
     }
 }
