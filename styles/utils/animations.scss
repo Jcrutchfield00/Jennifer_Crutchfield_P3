@@ -1,0 +1,77 @@
+.fade {
+  position: relative;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  0% {
+
+    left: -1600px;
+  }
+
+  25% {
+    opacity: .25;
+  }
+
+  90% {
+    opacity: .50;
+  }
+
+  100% {
+
+    left: 0px;
+  }
+}
+
+.fade-1 {
+  position: relative;
+  animation-name: fade-1;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade-1 {
+  0% {
+
+    left: -1600px;
+  }
+
+  25% {
+    opacity: .25;
+  }
+
+  90% {
+    opacity: .50;
+  }
+
+  100% {
+
+    left: 0px;
+  }
+}
+
+.fade-2 {
+  position: relative;
+  animation-name: fade-2;
+  animation-duration: 3s;
+}
+
+@keyframes fade-2 {
+  0% {
+
+    left: -1600px;
+  }
+
+  25% {
+    opacity: .25;
+  }
+
+  90% {
+    opacity: .50;
+  }
+
+  100% {
+
+    left: 0px;
+  }
+}

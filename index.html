@@ -1,106 +1,141 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Oh My Food</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/1ec04bc473.js" crossorigin="anonymous"></script>
+  <title>Oh My Food</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/1ec04bc473.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="logo"><img src="/Projet 3 - ohmyfood EN/images/logo/ohmyfood.png" alt="Oh My Food"> </div>
-        <header class="header" class="homepage">
-            <button class="gps"><i class="fas fa-map-marker-alt"></i><span class="text">Paris, Belleville</span></button>
-        <h2 class="header_bold">Book the menu you like</h2>
-        <p class="header_p">Discover top-of-the-art restaurants we picked for you</p>
-        <button class="explore_button">Explore our restaurants</button>
+  <div class="loading_page">
+    <img src="Projet3-ohmyfoodEN/images/logo/ohmyfood@2x.svg" alt="Oh My Food" />
+    <div class="loader"></div>
+  </div>
+  <div id="homepage">
+    <div class="logo">
+      <img src="Projet3-ohmyfoodEN/images/logo/ohmyfood.png" alt="Oh My Food" />
+    </div>
+    <header class="header">
+      <button class="gps">
+        <i class="fas fa-map-marker-alt"></i><span class="text">Paris, Belleville</span>
+      </button>
+      <h2 class="header_bold">
+        <a class="search_link" href="#">Book the menu you like</a>
+      </h2>
+      <p class="header_p">
+        <a class="search_link" href="#">Discover top-of-the-art restaurants we picked for you</a>
+      </p>
+      <a class="white explore_button" href="#">Explore our restaurants</a>
     </header>
     <nav>
-        <ol class="nav">
-        <h3 class="nav_header">How it works</h3> 
-        <button class="how_to_button"><li class="nav_chose"><i class="fa-solid fa-mobile-screen-button fa-lg"></i> Chose a restaurant</li></button>
-            <button class="how_to_button"><li class="nav_create"><i class="fa-solid fa-list fa-lg"></i>Create your menu</li></button>
-            <button class="how_to_button"><li class="nav_go"><i class="fa-solid fa-store fa-lg"></i>Go enjoy it at the restaurant</li></button>
-        </ol>
+      <ol class="nav">
+        <li class="nav_header">How it works</li>
+        <li class="nav_chose how_to_button">
+          <i class="fa-solid fa-mobile-screen-button fa-lg nav-icon"></i><span class="text_hover-black">Chose a
+            restaurant</span>
+        </li>
+        <li class="nav_create how_to_button">
+          <i class="fa-solid fa-list fa-lg nav-icon"></i><span class="text_hover-black">Create your menu</span>
+        </li>
+        <li class="nav_go how_to_button">
+          <i class="fa-solid fa-store fa-lg nav-icon"></i><span class="text_hover-black">Go enjoy it at the
+            restaurant</span>
+        </li>
+      </ol>
     </nav>
     <section class="restaurants">
-        <h2 class="restaurants_header">Restaurants</h2>
-        <article class="restaurants_cards">
-            <div class="image_container">
-            <img class="restaurants_cards_images" src="Projet 3 - ohmyfood EN/images/restaurants/palette.jpg" alt="The Full Palette">
-            <div class="top-right">New</div>
-        </div> 
-            <div class="restaurants_cards_content">
-                <div class="content_left">
-            <h3><a class="restaurants_cards_link" href="palette_menu.html">The Full Palette</h3>
-            <p class="no-wrap">New York</p>
-            </div>
-            <div class="content_right">
-            <button class="heart"><i class="fa-solid fa-heart"></i></button>
-            <!-- <button class="heart"><i class="fa-regular fa-heart"></i></button> -->
-        </div>    
+      <h2 class="restaurants_header">Restaurants</h2>
+      <div class="restaurants_cards">
+        <img class="restaurants_cards_images" src="Projet3-ohmyfoodEN/images/restaurants/palette.jpg"
+          alt="The Full Palette" />
+        <div class="top-right">New</div>
+        <div class="restaurants_cards_content">
+          <div class="content_left">
+            <a class="restaurants_cards_link" href="palette_menu.html">
+              <h3>The Full Palette</h3>
+              <p>New York</p>
+            </a>
+          </div>
+          <div class="content_right">
+            <i class="fa-solid fa-heart fa-lg heart-full"></i>
+            <i class="fa-regular fa-heart fa-lg heart-empty"></i>
+          </div>
         </div>
-        </article>
-        <article class="restaurants_cards">
-            <div class="image_container">
-            <img class="restaurants_cards_images" src="Projet 3 - ohmyfood EN/images/restaurants/enchantedplate.jpg" alt="The Enchanted Plate">
-            <div class="top-right">New</div>
-        </div> 
-            <div class="restaurants_cards_content">
-                <div class="content_left">
-            <h3><a class="restaurants_cards_link" href="enchantedplate_menu.html">The Enchanted Plate</h3>
-            <p class="no-wrap">New York</p>
-            </div>
-            <div class="content_right">
-            <button class="heart"><i class="fa-solid fa-heart"></i></button>
-            <!-- <button class="heart"><i class="fa-regular fa-heart"></i></button> -->
-        </div>    
+      </div>
+      <div class="restaurants_cards">
+        <img class="restaurants_cards_images" src="Projet3-ohmyfoodEN/images/restaurants/enchantedplate.jpg"
+          alt="The Enchanted Plate" />
+        <div class="top-right">New</div>
+        <div class="restaurants_cards_content">
+          <div class="content_left">
+            <a class="restaurants_cards_link" href="enchantedplate_menu.html">
+              <h3>The Enchanted Plate</h3>
+              <p>New York</p>
+            </a>
+          </div>
+          <div class="content_right">
+            <i class="fa-solid fa-heart fa-lg heart-full"></i>
+            <i class="fa-regular fa-heart fa-lg heart-empty"></i>
+          </div>
         </div>
-        </article>
-        <article class="restaurants_cards">
-            <div class="image_container">
-            <img class="restaurants_cards_images" src="Projet 3 - ohmyfood EN/images/restaurants/bastille.jpg" alt="Bastille">
-        </div> 
-            <div class="restaurants_cards_content">
-                <div class="content_left">
-            <h3><a class="restaurants_cards_link" href="Bastille_menu.html">Bastille</h3>
-            <p class="no-wrap">New York</p>
-            </div>
-            <div class="content_right">
-            <button class="heart"><i class="fa-solid fa-heart"></i></button>
-            <!-- <button class="heart"><i class="fa-regular fa-heart"></i></button> -->
-        </div>    
+      </div>
+      <div class="restaurants_cards">
+        <img class="restaurants_cards_images" src="Projet3-ohmyfoodEN/images/restaurants/bastille.jpg" alt="Bastille" />
+        <div class="restaurants_cards_content">
+          <div class="content_left">
+            <a class="restaurants_cards_link" href="Bastille_menu.html">
+              <h3>Bastille</h3>
+              <p>New York</p>
+            </a>
+          </div>
+          <div class="content_right">
+            <i class="fa-solid fa-heart fa-lg heart-full"></i>
+            <i class="fa-regular fa-heart fa-lg heart-empty"></i>
+          </div>
         </div>
-        </article>
-        <article class="restaurants_cards">
-            <div class="image_container">
-            <img class="restaurants_cards_images" src="Projet 3 - ohmyfood EN/images/restaurants/gourmand.jpg" alt="Le Gourmand">
-        </div> 
-            <div class="restaurants_cards_content">
-                <div class="content_left">
-            <h3><a class="restaurants_cards_link" href="gourmand_menu.html">Le Gourmand</h3>
-            <p class="no-wrap">New York</p>
-            </div>
-            <div class="content_right">
-            <button class="heart"><i class="fa-solid fa-heart"></i></button>
-            <!-- <button class="heart"><i class="fa-regular fa-heart"></i></button> -->
-        </div>    
+      </div>
+      <div class="restaurants_cards">
+        <img class="restaurants_cards_images" src="Projet3-ohmyfoodEN/images/restaurants/gourmand.jpg"
+          alt="Le Gourmand" />
+        <div class="restaurants_cards_content">
+          <div class="content_left">
+            <a class="restaurants_cards_link" href="gourmand_menu.html">
+              <h3>Le Gourmand</h3>
+              <p>New York</p>
+            </a>
+          </div>
+          <div class="content_right">
+            <i class="fa-solid fa-heart fa-lg heart-full"></i>
+            <i class="fa-regular fa-heart fa-lg heart-empty"></i>
+          </div>
         </div>
-        </article>
-    </section> 
+      </div>
+    </section>
     <footer class="footer">
-        <h4 class="footer_header">OhMyFood</h4>
-        <ul class="footer_list">
-            <li class="footer_list_item"><a class="white" href="#"><i class="fa-solid fa-utensils"></i>Suggest a restaurant</a></li>
-            <li class="footer_list_item"><a class="white" href="#"><i class="fa-solid fa-handshake-angle"></i>Become a partner</a></li>
-            <li class="footer_list_item"><a class="white" href="#">Legal</li></a>
-            <li class="footer_list_item"><a class="white" href="#" target="_blank">Contact</a></li>
-        </ul>
-    </footer> 
+      <h4 class="footer_header">OhMyFood</h4>
+      <ul class="footer_list">
+        <li class="footer_list_item">
+          <a class="white" href="#"><i class="fa-solid fa-utensils"></i>Suggest a restaurant</a>
+        </li>
+        <li class="footer_list_item">
+          <a class="white" href="#"><i class="fa-solid fa-handshake-angle"></i>Become a partner</a>
+        </li>
+        <li class="footer_list_item"><a class="white" href="#">Legal</a></li>
+        <li class="footer_list_item">
+          <a class="white" href="#" target="_blank">Contact</a>
+        </li>
+      </ul>
+    </footer>
+  </div>
 </body>
+
 </html>
