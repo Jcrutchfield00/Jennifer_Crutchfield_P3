@@ -4,11 +4,15 @@
           animation-name: fade;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes fade {
   0% {
-    left: -1600px;
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
   25% {
     opacity: .25;
@@ -17,13 +21,17 @@
     opacity: .50;
   }
   100% {
-    left: 0px;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes fade {
   0% {
-    left: -1600px;
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
   25% {
     opacity: .25;
@@ -32,7 +40,9 @@
     opacity: .50;
   }
   100% {
-    left: 0px;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -46,7 +56,9 @@
 
 @-webkit-keyframes fade-1 {
   0% {
-    left: -1600px;
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
   25% {
     opacity: .25;
@@ -55,13 +67,17 @@
     opacity: .50;
   }
   100% {
-    left: 0px;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes fade-1 {
   0% {
-    left: -1600px;
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
   25% {
     opacity: .25;
@@ -70,7 +86,9 @@
     opacity: .50;
   }
   100% {
-    left: 0px;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -84,7 +102,9 @@
 
 @-webkit-keyframes fade-2 {
   0% {
-    left: -1600px;
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
   25% {
     opacity: .25;
@@ -93,13 +113,17 @@
     opacity: .50;
   }
   100% {
-    left: 0px;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes fade-2 {
   0% {
-    left: -1600px;
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
   25% {
     opacity: .25;
@@ -108,7 +132,9 @@
     opacity: .50;
   }
   100% {
-    left: 0px;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
-/*# sourceMappingURL=animations.css.map */ 
+/*# sourceMappingURL=animations.css.map */
