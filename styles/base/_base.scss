@@ -379,6 +379,14 @@ nav {
       display: flex;
     }
   }
+
+  @include desktop_lg {
+    .footer {
+      font-size: 20px;
+      position: relative;
+      display: flex;
+    }
+  }
 }
 
 .footer_header {
