@@ -11,12 +11,4 @@ $color-light-primary: lighten($color-primary, 20%);
 $color-light-secondary: lighten($color-secondary, 20%);
 $color-light-linear: linear-gradient(175deg, $color-light-secondary, $color-light-primary);
 
-$breakpoints: (
-    mobile: 356px
-    tablet_min: 764px 
-    tablet_max: 1108px
-    desktop: 1109px
-    desktop_lg: 1280px
-    desktop_xlg: 1500px
-);
-
+$breakpoints: (mobile: 356px, tablet_min: 764px, tablet_max: 1108px, desktop: 1109px, desktop_lg: 1280px, desktop_xlg: 1500px);
