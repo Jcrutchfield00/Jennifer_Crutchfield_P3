@@ -711,8 +711,9 @@ figure {
   object-fit: cover;
   opacity: 0;
   animation-name: appear;
-  animation-duration: 1s;
+  animation-duration: .15s;
   animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
 }
   @include tablet {
     .menu_images img {
@@ -767,9 +768,6 @@ figure {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-    }
-
-    .menu {
       width: 100%;
       height: 100%;
     }
@@ -819,8 +817,9 @@ figure {
   position: relative;
   opacity: 0;
   animation-name: appear;
-  animation-duration: 2s;
+  animation-duration: .20s;
   animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
 }
   @include mobile_only {
     .menu_sub_header {
