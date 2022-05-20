@@ -601,7 +601,7 @@
 .explore_button:hover {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
-  background: linear-gradient(175deg, #ffdff6, #c9abee);
+  background: linear-gradient(175deg, #ff93e1, #a16be0);
   -webkit-box-shadow: 10px 5px 5px #c6c6c6;
           box-shadow: 10px 5px 5px #c6c6c6;
 }
@@ -645,7 +645,7 @@
 .order_button:hover {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
-  background: linear-gradient(175deg, #ffdff6, #c9abee);
+  background: linear-gradient(175deg, #ff93e1, #a16be0);
   -webkit-box-shadow: 10px 5px 5px #c6c6c6;
           box-shadow: 10px 5px 5px #c6c6c6;
 }
@@ -711,7 +711,7 @@ body {
       align-content: center;
   width: 100%;
   height: 100%;
-  background: linear-gradient(175deg, #ffdff6, #c9abee);
+  background: linear-gradient(175deg, #ff93e1, #a16be0);
   -webkit-animation-name: loading;
           animation-name: loading;
   -webkit-animation-duration: 3s;
@@ -760,7 +760,7 @@ body {
 .loader {
   position: absolute;
   bottom: 20%;
-  border: 16px transparent #c9abee;
+  border: 16px transparent #a16be0;
   border-top: 16px solid #99e2d0;
   border-bottom: 16px solid #99e2d0;
   border-radius: 50%;
