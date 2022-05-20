@@ -14,7 +14,7 @@
   box-shadow: 3px 3px 3px $color-gray;
 }
 
-@mixin mobile_only {
+@mixin mobile_min {
   @media all and (min-width: map-get($breakpoints, mobile)) {
     @content;
   }

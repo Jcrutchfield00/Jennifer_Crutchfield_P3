@@ -139,7 +139,7 @@ body {
   margin-top: 30px;
   text-align: center;
 }
-  @include mobile_only {
+  @include mobile_min {
     .logo {
       width: 375px;
     }
@@ -173,7 +173,7 @@ body {
   font-size: 16px;
   border: 1px solid transparent;
 }
-  @include mobile_only {
+  @include mobile_min {
     .gps {
       font-size: 20px;
     }
@@ -183,7 +183,7 @@ body {
 .header_bold {
   font-size: 22px;
 }
-  @include mobile_only {
+  @include mobile_min {
     .header_bold {
       font-size: 30px;
     }
@@ -193,7 +193,7 @@ body {
 .header_p {
   font-size: 16px;
 }
-  @include mobile_only {
+  @include mobile_min {
     .header_p {
       font-size: 20px;
     }
@@ -292,7 +292,7 @@ nav {
     color: $color-primary;
   }
 }
-  @include mobile_only {
+  @include mobile_min {
     .how_to_button {
       font-weight: 600;
       padding: 20px;
@@ -584,7 +584,7 @@ nav {
   margin-left: 10px;
   margin-right: auto;
 }
-  @include mobile_only {
+  @include mobile_min {
     .content_left {
       font-size: 16px;
     }
@@ -822,7 +822,7 @@ figure {
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
 }
-  @include mobile_only {
+  @include mobile_min {
     .menu_sub_header {
       font-size: 1.5em;
       margin-top: -15%;
@@ -863,7 +863,7 @@ figure {
 }
 
 .menu-heart-full::before {
-  @include mobile_only {
+  @include mobile_min {
     left: 24px;
   }
 }
@@ -875,7 +875,7 @@ figure {
   bottom: 20px;
   right: 25px;
 }
-  @include mobile_only {
+  @include mobile_min {
     .menu_content_right {
       bottom: 35px;
     }
