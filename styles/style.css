@@ -1469,6 +1469,13 @@ nav {
   z-index: -1;
 }
 
+@media all and (min-width: 1280px) {
+  .menu-heart-empty::before {
+    position: relative;
+    right: 7px;
+  }
+}
+
 .menu-heart-full::before {
   position: relative;
   left: 16px;
@@ -1481,12 +1488,6 @@ nav {
 
 .menu-heart-full::before:hover {
   opacity: 1;
-}
-
-@media all and (min-width: 1280px) {
-  .menu-heart-full::before {
-    left: 30px;
-  }
 }
 
 .fa-heart:hover::before {
@@ -1695,8 +1696,8 @@ figure {
   opacity: 0;
   -webkit-animation-name: appear;
           animation-name: appear;
-  -webkit-animation-duration: .20s;
-          animation-duration: .20s;
+  -webkit-animation-duration: .2s;
+          animation-duration: .2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in;
@@ -1707,12 +1708,6 @@ figure {
   .menu_sub_header {
     font-size: 1.5em;
     margin-top: -15%;
-  }
-}
-
-@media all and (min-width: 764px) and (max-width: 1108px) {
-  .menu_sub_header {
-    margin-top: -8%;
   }
 }
 

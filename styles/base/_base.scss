@@ -618,6 +618,12 @@ nav {
   color: $color-black;
   z-index: -1;
 }
+@include desktop_lg {
+  .menu-heart-empty::before {
+    position: relative;
+    right: 7px;
+  }
+}
 
 .menu-heart-full::before {
   position: relative;
@@ -631,11 +637,6 @@ nav {
     opacity: 1;
   }
 }
-  @include desktop_lg {
-    .menu-heart-full::before {
-      left: 30px;
-    }
-  }
 
 
 .fa-heart:hover::before {
@@ -817,7 +818,7 @@ figure {
   position: relative;
   opacity: 0;
   animation-name: appear;
-  animation-duration: .20s;
+  animation-duration: .2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
 }
@@ -828,11 +829,7 @@ figure {
     }
   }
 
-  @include tablet {
-    .menu_sub_header {
-      margin-top: -8%;
-    }
-  }
+ 
 
   @include desktop {
     .menu_sub_header {
